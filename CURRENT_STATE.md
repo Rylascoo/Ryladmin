@@ -4,60 +4,64 @@ Updated: 2026-09-10
 
 ## Scope
 
-This file carries Administrator continuity only. It does not override Ensemble Project/Website authority. Every fresh session must re-resolve live refs and owning authority before acting.
+This file carries Administrator continuity only. It never overrides Ensemble Project/Website authority. Every fresh session must read root `AGENTS.md`, re-resolve live owning refs, and reconcile this snapshot before acting.
 
-## Ensemble snapshot at handoff
+## Last reconciled Ensemble authority
 
-Last reconciled Ensemble Project authority: `Rylascoo/Ensemble-Project` `main@6fffffba7275a8612b0d4d43cd2498c0e5513ad4`. Project `CURRENT_STATE.md` records E0-A Phase B / Q-E0A-03 as active and Administrator C0/C1/C2/C3 DONE. Re-resolve `main` before relying on this SHA.
+`Rylascoo/Ensemble-Project` last reconciled at `main@7aa99cf63e083a8ac0c50eb1d7c8c7b69b9ec86e` after C4 merge. Re-resolve `main` before relying on this SHA.
 
-C3 is durably closed. Candidate `fbe1f8b3e29864bda4c1699632fc5d08d8763763` was merged through PR #60; post-merge Validation gate #602 passed all five jobs. Annotated archive tag `archive/q-admin-02-c3-deterministic-skills-2026-09-10` peels exactly to the candidate. The temporary C3 worktree/local branch/remote branch were retired.
+At that ref, Project `CURRENT_STATE.md` records E0-A Phase B / Q-E0A-03 active with the Gemini 3.5 Flash-Lite structured-output compatibility correction native-validated and a fresh full-reference authorization gate pending. Promoted native authority is `cef3fc15e31192a48aa3bddd99450b65a58bd8f1`; full-reference provider authorization is `NONE`. Administrator C0/C1/C2/C3/C4 are DONE; C5 is next. These Project facts remain owned by the Project repository, not Ryladmin.
 
-## Active Administrator gate
+## Administrator gate status
 
-**C4 — Isolated Worker mutation is ACTIVE. C5 and later gates are blocked.**
+**C0-C4 DONE. C5 — Branch / tag / push / PR lifecycle is the sole next earned Administrator gate. C6+ remain blocked.**
 
-C4 isolated worktree/branch:
-`q-admin-02-c4-isolated-worker-2026-09-10`
+C4 candidate: `844c4cf43fdf47e21cc11caaac61defc8eea2513`.
 
-Current C4 baseline at last check:
-`6fffffba7275a8612b0d4d43cd2498c0e5513ad4`
+C4 promotion:
+- PR #61 merged candidate into Project `main@7aa99cf63e083a8ac0c50eb1d7c8c7b69b9ec86e`.
+- Candidate tree and merge tree matched exactly: `85b1f318fc612c54e4fa80fd3db0fb9c77be5528`.
+- Push Validation #605 PASS.
+- PR Validation #606 PASS.
+- PR E0-E preparation #19 PASS.
+- Post-merge Validation #607 PASS with all five jobs green.
+- Annotated archive tag `archive/q-admin-02-c4-isolated-worker-2026-09-10` peels exactly to the C4 candidate locally and remotely.
+- Temporary C4 worktree, local branch, and remote branch were retired after archive/ancestry verification.
 
-Native Codex permission-inheritance probe thread:
-`01a08d84-c08d-7f81-b2b0-fcd7c68e8318`
+C4 durable Project evidence: `docs/evidence/CODEX_ADMINISTRATOR_C4_ISOLATED_WORKER_MUTATION_2026_09_10.md`.
 
-Observed inheritance result: read-only Administrator parent, Scout, native Worker, and Reviewer were all sandbox-denied on write attempts. Therefore native subagent inheritance cannot commission a workspace-write Worker without broadening the parent. The Director-approved Runtime Specification's fallback is active: Worker execution uses a separate top-level context.
+## C4 mechanism proven
 
-Top-level Worker R0 thread:
-`01a08d97-4561-7532-bf73-095248656d63`
+Native permission-inheritance diagnostic thread: `01a08d84-c08d-7f81-b2b0-fcd7c68e8318`.
 
-The Worker created exactly one untracked canary inside the isolated C4 worktree, verified exact 16-byte content `C4_WORKER_R0_OK\n`, and reported SHA-256 `63542cdb3229264420a53c3507679b90d46480673536371aa026dcf44348bfa5`. Independent Administrator verification matched. Tracked diff count was 0; protected authority blobs were unchanged. The Administrator removed only the canary and the worktree returned clean at the same HEAD.
+On pinned Codex 0.153.4, read-only Administrator parent, Scout, native Worker requesting workspace-write, and Reviewer were all sandbox-denied. Therefore the commissioned Worker mechanism is the Runtime Specification fallback: a separate top-level Worker context; do not broaden the Administrator.
 
-Direct `codex sandbox -P :workspace -C <worktree>` diagnostics denied both allowed and disallowed writes; this runner does not reproduce normal `codex exec` workspace-root realization on this pinned Windows build. The actual top-level Worker `codex exec` path successfully performed the bounded inside-worktree mutation and is the relevant C4 mechanism.
+Top-level Worker R0 thread: `01a08d97-4561-7532-bf73-095248656d63`.
 
-A Cloudflare OAuth warning appeared from a higher managed host integration even with Worker apps/remote plugin disabled. Dedicated `CODEX_HOME` reports no configured MCP servers and `codex plugin list --json` reports no installed/available plugins. The warning did not yield a callable commissioned tool or repository mutation; preserve it as diagnostic evidence rather than attributing it to Worker authority.
+The Worker created exactly one untracked canary in its assigned isolated worktree, verified exact 16-byte `C4_WORKER_R0_OK\n` content and SHA-256 `63542cdb3229264420a53c3507679b90d46480673536371aa026dcf44348bfa5`, changed zero tracked/protected files, emitted no Git operation, and completed normally. Administrator verification matched and removed only the canary, returning the worktree to its clean baseline.
+
+Direct `codex sandbox -P :workspace -C <worktree>` did not reproduce normal `codex exec` workspace-root realization on this pinned Windows build and is not the positive Worker mechanism.
+
+A Cloudflare OAuth warning was observed from a higher managed host integration. Dedicated `CODEX_HOME` reports no configured MCP servers and no installed/available Codex plugins. Treat this as a re-verification trigger, not Worker authority.
 
 ## Machine-local runtime realization
 
-Dedicated home: `C:\Users\Wiryl\.codex-ensemble`
+Dedicated home: `C:\Users\Wiryl\.codex-ensemble`.
 
 Pinned Codex: `codex-cli 0.153.4`; executable SHA-256 `77F792476FE0DEF726503F02A7C55F485E562DD7AD8801FE61DC8F4BF9991D20`.
 
-C4 runtime candidate hashes at last check:
+C4 runtime hashes:
 - `config.toml`: `A3ECBDD23914D84C4A9B87FDB180366495CC76FD5214E532434312B4864F71C1`
 - `worker.config.toml`: `340907F398FA5A20E3853D34679A6C1F679084189FD4175EF0D3B89EC3F8BDFC`
 - `bin/ensemble-worker.ps1`: `B1F1EE5D5C55F06BD73B3D2DF9D7E3E36170BFD012CB5E11B7C26F36E139093A`
 - `state/runtime-manifest.json`: `ABD909ABF3DC1E775550CE3BEF3AEFB5744E36367AA9292F97A3F0373CA48408`
 
-C4 rollback snapshot:
-`C:\Users\Wiryl\.codex-ensemble\backups\C4-top-level-worker-20260910T225814Z`
+C4 rollback snapshot: `C:\Users\Wiryl\.codex-ensemble\backups\C4-top-level-worker-20260910T225814Z`.
 
-The Administrator default remains read-only/on-request. Worker uses a separate exact-worktree launcher/profile with workspace-write intent, approval `never`, command network off, apps/connectors disabled, subagents disabled, and no provider authority.
+Administrator remains read-only/on-request. Worker is a separate exact-worktree/expected-HEAD-bound top-level launcher with workspace-write intent, approval `never`, command network off, apps/connectors/subagents/browser/Hooks/memories/goals disabled, and no provider authority.
 
-## Exact continuation
+## Exact continuation — C5
 
-1. Treat the successful top-level R0 canary plus native-inheritance diagnostic as C4 execution evidence; do not broaden the Administrator.
-2. Complete independent read-only Scout/Reviewer/protected-surface/shared-Git checks and confirm the isolated worktree remains clean before manager closeout edits.
-3. Write C4 durable evidence in `Ensemble-Project`, update only the required Administrator continuity surfaces, and preserve current Engineering/provider/validation truth exactly.
-4. Run recursive audit, repository laws/census/oracle/diff checks and applicable regressions.
-5. Promote C4 through the established manager-controlled branch/PR/archive lifecycle. Do not claim that lifecycle as C5 commissioning.
-6. After C4 is durably merged/archived/retired, update this file. Only then is C5 the next earned Administrator gate.
+Fresh-read live Project `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and Runtime Specification before acting. C5's approved contract is one disposable commissioning branch carrying only commissioning evidence. Prove: fresh origin race-check, serialized push, PR mechanics, no direct `main` mutation, archive-tag discipline, and safe branch/worktree disposal.
+
+Do not infer C6, provider/spend, validation promotion, Design/ODR, Hooks, Automations, Claude, browser/CDP, or unique-branch deletion authority from C5. Keep shared Git operations serialized and preserve all unexplained/historical worktrees until classified.
