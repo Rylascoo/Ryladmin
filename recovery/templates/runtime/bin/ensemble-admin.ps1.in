@@ -1,0 +1,52 @@
+param(
+    [string[]]$CodexArgs = @()
+)
+
+$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+
+$ProjectRoot = "__PROJECT_ROOT__"
+$AdminHome = Join-Path $env:USERPROFILE ".codex-ensemble"
+$AdministratorConfig = Join-Path $AdminHome "administrator.config.toml"
+$SessionRoot = Join-Path $AdminHome "sessions"
+$CodexExe = "__CODEX_EXE__"
+$ExpectedCodexVersion = "__CODEX_VERSION__"
+
+$ProjectSentinel = Join-Path $ProjectRoot ".ensemble-project-root"
+$ProjectDecisionQueue = Join-Path $ProjectRoot "docs\PROJECT_EXECUTION_QUEUE.md"
+$ProjectLocalConfig = Join-Path $ProjectRoot ".codex\config.toml"
+
+if (-not (Test-Path -LiteralPath $ProjectRoot -PathType Container)) { throw "Project root not found: $ProjectRoot" }
+if (-not (Test-Path -LiteralPath $ProjectSentinel -PathType Leaf)) { throw "Ensemble project sentinel not found: $ProjectSentinel" }
+if (-not (Test-Path -LiteralPath $ProjectDecisionQueue -PathType Leaf)) { throw "Ensemble decision queue not found: $ProjectDecisionQueue" }
+if (Test-Path -LiteralPath $ProjectLocalConfig) { throw "Project-local .codex/config.toml is not admitted by the approved commissioning baseline: $ProjectLocalConfig" }
+if (-not (Test-Path -LiteralPath $AdministratorConfig -PathType Leaf)) { throw "Administrator config missing: $AdministratorConfig" }
+if (-not (Test-Path -LiteralPath $CodexExe -PathType Leaf)) { throw "Pinned Codex executable missing: $CodexExe" }
+
+$CodexVersion = (& $CodexExe --version 2>$null | Select-Object -First 1).Trim()
+if ($LASTEXITCODE -ne 0) { throw "Unable to execute pinned Codex binary: $CodexExe" }
+if ($CodexVersion -ne $ExpectedCodexVersion) { throw "Pinned Codex version mismatch. Expected '$ExpectedCodexVersion'; got '$CodexVersion'." }
+
+$ResolvedProjectRoot = (Resolve-Path -LiteralPath $ProjectRoot).Path
+$ResolvedCurrent = (Get-Location).Path
+if ($ResolvedCurrent -ne $ResolvedProjectRoot) {
+    throw "Start ensemble-admin from the exact Project root. Expected '$ResolvedProjectRoot'; got '$ResolvedCurrent'."
+}
+
+$null = New-Item -ItemType Directory -Force -Path $SessionRoot
+$PreviousCodexHome = $env:CODEX_HOME
+try {
+    $env:CODEX_HOME = $AdminHome
+    & $CodexExe @CodexArgs
+    $ExitCode = $LASTEXITCODE
+}
+finally {
+    if ($null -eq $PreviousCodexHome) {
+        Remove-Item Env:CODEX_HOME -ErrorAction SilentlyContinue
+    }
+    else {
+        $env:CODEX_HOME = $PreviousCodexHome
+    }
+}
+
+exit $ExitCode

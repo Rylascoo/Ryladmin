@@ -21,7 +21,8 @@ A fresh Administrator chat must:
 3. recover local runtime and worktree truth when machine state matters;
 4. recover current GitHub CI/ref truth when promotion or validation evidence matters;
 5. distinguish active Engineering and Design work from Administrator worktrees before any cleanup;
-6. continue the recorded gate only after reconciling stale snapshots.
+6. when the local runtime is absent, replaced, or materially drifted, run the disaster-recovery contract and verification kit before execution;
+7. continue the recorded gate only after reconciling stale snapshots.
 
 ## Update triggers
 
@@ -37,7 +38,7 @@ Routine test output and transient logs do not belong here unless needed to ident
 
 ## Data discipline
 
-Never store credentials, API keys, auth tokens/files, private user content, copied provider payloads containing private data, or secrets. Prefer hashes, exact refs, thread/run identifiers, public repository paths, non-secret machine paths, and concise evidence outcomes.
+Never store credentials, API keys, auth tokens/files, private user content, copied provider payloads containing private data, or secrets. Prefer hashes, exact refs, thread/run identifiers, public repository paths, non-secret machine paths, and concise evidence outcomes. The disaster-recovery kit may preserve sanitized runtime templates and pinned non-secret tool metadata, but never personal auth/session/browser state.
 
 ## Closure discipline
 

@@ -1,0 +1,36 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Portable fail-closed Ensemble Administrator baseline.
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+web_search = "disabled"
+openai_base_url = "https://api.openai.com/v1"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
+model_auto_compact_token_limit = 240000
+forced_login_method = "chatgpt"
+project_root_markers = [".ensemble-project-root"]
+network_access = false
+sandbox_workspace_write_writable_roots = []
+shell_environment_policy = { "inherit" = "core", "ignore_default_excludes" = false }
+
+[features]
+shell_tool = true
+use_linux_sandbox_bwrap = false
+multi_agent = false
+hooks = false
+memories = false
+goals = false
+skills = true
+integrations = true
+remote_plugins = false
+browser = false
+computer_use = false
+external_browser_use = false
+full_browser_cdp = false
+check_for_update_on_startup = false
+
+[projects.'__PROJECT_ROOT__']
+trust_level = "trusted"
+
+__GITHUB_MCP_BLOCK__
