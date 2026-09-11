@@ -10,9 +10,9 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 ## Last reconciled owning authority snapshots
 
-`Rylascoo/Ensemble-Project` was last reconciled at `main@40328c59d21c30ea76f74d4e1bdac20e1b258d43`, merge `Merge C10 hook pilot falsification closeout`. Post-merge Validation gate #662 (workflow run `34639746428`) passed on that exact SHA.
+`Rylascoo/Ensemble-Project` was last reconciled at `main@925c48eeec5489129b3590436e9c1c4072b969b5`, merge `Merge C10 upstream revalidation trigger disposition`. The exact disposition candidate `e92c2ba9a7234adaeab275c164537347a1c7f599` is the second parent of that merge commit and is fully contained in `main`.
 
-Project `CURRENT_STATE.md` at that ref records Run 06 as consumed/noncontributing after a terminal `TechnicalFailure`: Performer `countTokens` succeeded at 724, the first Performer generation returned HTTP 503 / `UNAVAILABLE`, accepted turns remained zero, and provider traffic is zero after Run 06. Project Engineering next action is 3.1 preactivation with provider traffic not authorized. Ryladmin records this only as a snapshot and creates no provider or Engineering authority.
+Project `CURRENT_STATE.md` at the underlying live Engineering baseline records Q-E0A-03 Run 07 as reserved/unconsumed and non-executable pending the authenticated AI Studio project/key/quota gate; provider traffic is not authorized. Ryladmin records this only as a snapshot and creates no provider or Engineering authority.
 
 Current Project native validation authority remains exact checkout `bb869fb1c505603612bc718f739b3f1b358e5539` under tag `validation/e0a-gemini-technical-failure-diagnostic-classification-native-arm64` according to the live Project state.
 
@@ -22,11 +22,11 @@ Current Project native validation authority remains exact checkout `bb869fb1c505
 
 **C0-C9 DONE. C10 - Hook pilot is BLOCKED / FALSIFIED and did not pass. C11+ remain blocked. No later Administrator gate is currently earned.**
 
-C10 creates no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. Its failure does not weaken the Director-approved Runtime Specification. Administrator continuation stops at the C10 blocker until explicit Project/Director disposition authorizes a new realization/revalidation attempt or another lawful disposition.
+C10 creates no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. Its failure does not weaken the Director-approved Runtime Specification. The Director has now defined a source-gated revalidation trigger, but C10 remains blocked until that upstream capability trigger is satisfied and a new exact realization is explicitly opened; C11 remains blocked.
 
 ## C10 Hook pilot - durable falsification closeout
 
-C10 was executed on authorized machine `SurfSeven` using the commissioned pinned `codex-cli 0.153.4` binary, SHA-256 `77F792476FE0DEF726503F02A7C55F485E562DD7AD8801FE61DC8F4BF9991D20`. An ambient Codex `0.154.0` installation was observed but was not substituted, tested, or used to obtain a pass. Normal Administrator `config.toml` still has `features.hooks = false`; Hooks were enabled only for bounded C10 invocations. `--dangerously-bypass-hook-trust` was never used. Automations remain disabled because C11 was never earned.
+C10 was executed on authorized machine `SurfSeven` using the commissioned pinned `codex-cli 0.153.4` binary, SHA-256 `77F792476FE0DEF726503F02A7C55F485E562DD7AD8801FE61DC8F4BF9991D20`. The ambient Codex `0.154.0` installation was later source-inspected and binary-censused, but it was not substituted, commissioned, Hook-enabled, trusted, or live-tested for C10. Normal Administrator `config.toml` still has `features.hooks = false`; Hooks were enabled only for the completed bounded 0.153.4 C10 pilot. `--dangerously-bypass-hook-trust` was never used. Administrator C11 Automations remain disabled because C11 was never earned.
 
 Disposable fixture remains `C:\Users\Wiryl\Sol Dev\Ensemble-Admin-C10-Hook-Fixture`, baseline HEAD `70a0f6f90eff4a1a0772beb109d14b8e3393f387`. Its intentional dirty/untracked C10 evidence is preserved and must not be cleaned, reset, repurposed, or deleted until a future authorized disposition says otherwise.
 
@@ -60,7 +60,37 @@ Durable Project evidence: `Rylascoo/Ensemble-Project/docs/evidence/CODEX_ADMINIS
 - normal Project root remains clean/detached at historical validation checkout `689655eed677b789ab3ee395f1c65b4f2cb72cc8`;
 - disposable C10 fixture remains preserved with its evidence; unrelated Engineering/validation worktrees were not repurposed or deleted.
 
-Any future Codex-version, Hook-contract, or runtime-realization retest is a new realization/revalidation event. Do not silently upgrade to ambient `0.154.0`, reinterpret the failure as a pass, or start C11. Await explicit Project/Director disposition first.
+Any future Codex-version, Hook-contract, or runtime-realization retest is a new realization/revalidation event. Do not silently upgrade to ambient `0.154.0`, reinterpret the failure as a pass, or start C11.
+
+## C10 upstream-capability revalidation trigger — Director disposition
+
+Durable Project disposition: `docs/evidence/CODEX_ADMINISTRATOR_C10_REVALIDATION_TRIGGER_DIRECTOR_DISPOSITION_2026_09_11.md`.
+
+The original `0.153.4` falsification remains immutable historical gate evidence. The Director explicitly declined a redundant live C10 attempt on ambient `0.154.0` because exact upstream source inspection proved the relevant fail-open behavior is unchanged: OpenAI Codex tags `rust-v0.153.4` and `rust-v0.154.0` resolve `codex-rs/hooks/src/events/pre_tool_use.rs` to the same Git blob `c1baebd4f01fd1906f461fe84cb2bf0d73058bfc`. Generic nonzero/no-status hook-process failures do not set `should_block=true`, and serialization failure explicitly returns `should_block:false`. OpenAI Codex issue #41979 remained open and requests the missing opt-in fail-closed `PreToolUse` behavior.
+
+Ambient SurfSeven `codex-cli 0.154.0` was censused at `C:\Users\Wiryl\AppData\Local\Programs\OpenAI\Codex\bin\codex.exe`, SHA-256 `DC6D744D747A50F8CAF7F08817E0CCC9B09781F6269DEC3609E2F9FBE036233D`. No live C10 invocation, Hook enablement, Hook trust mutation, fixture mutation, or commissioned-runtime substitution occurred during this inspection.
+
+A future Codex version is **not eligible merely because it is newer**. Before any live C10 revalidation, exact candidate source/release inspection must prove that `PreToolUse` can block underlying tool dispatch when the protective hook itself fails, including at minimum non-protocol nonzero exit, spawn/launch failure, timeout, malformed protocol output, and serialization/input-event failure or the then-current equivalent. Only after that trigger is satisfied may an explicit Project/Director opening commission the exact executable/version/hash and create a fresh disposable realization.
+
+The strengthened future C10 suite must preregister at least normal allow, valid explicit deny, deliberate non-protocol nonzero failure, spawn failure, timeout, malformed output, and safely reproducible serialization failure. Every failure-class case must prove the underlying command was not dispatched. A future pass does not erase the `0.153.4` falsification; another failure leaves C10 blocked.
+
+### C10 trigger disposition Project promotion / archive / disposal
+
+- live Project base: `ffb3e0e17683b63fde07426817b1b7a73da75dce`;
+- exact disposition candidate: `e92c2ba9a7234adaeab275c164537347a1c7f599`;
+- repository law, document authority census, oracle guard, diff hygiene, protected-diff and commissioning-closeout: PASS;
+- only protected surface: `docs/PROJECT_EXECUTION_QUEUE.md`, explicitly Director-adopted; `authority_created=false`, `validation_rung_promoted=false`;
+- PR #79 exact head/base: candidate `e92c2ba9a7234adaeab275c164537347a1c7f599` over `ffb3e0e17683b63fde07426817b1b7a73da75dce`;
+- PR Validation gate #667, workflow run `34644053287`: PASS on the exact candidate;
+- expected-head merge request produced a GitHub metadata anomaly: the API returned HTTP 405 / non-mergeable while `main` simultaneously advanced to merge commit `925c48eeec5489129b3590436e9c1c4072b969b5`, whose parents are exactly the audited base and candidate; ancestry comparison confirms the candidate is contained with no content difference;
+- PR #79 was then closed with the anomaly recorded to prevent a duplicate merge attempt; GitHub PR metadata therefore says closed/unmerged even though the exact candidate is contained in the merge commit on `main`;
+- no push-triggered post-merge Validation run for `925c48eeec5489129b3590436e9c1c4072b969b5` had been emitted/observed during closeout; do not rewrite PR #667 as post-merge CI;
+- archive tag: `archive/q-admin-02-c10-upstream-trigger-2026-09-11`;
+- annotated tag object: `25072ec192d57f056fcb626c9cfc79b745e9ff8f`;
+- tag peel: exact candidate `e92c2ba9a7234adaeab275c164537347a1c7f599`;
+- disposition worktree/local branch/remote branch retired; normal Project root remains detached/clean at `689655eed677b789ab3ee395f1c65b4f2cb72cc8`; C10 fixture remains preserved; shared-Git lock residue was zero.
+
+A separate user-level ChatGPT condition watch may assist discovery of an upstream fail-closed implementation. It is convenience tooling only: it is not Project authority, not part of the commissioned Administrator runtime, and not C11 Administrator Automations.
 
 ## C9 Claude read-only review closeout
 
@@ -122,12 +152,12 @@ A replacement machine may preserve C0-C9 as durable historical gate closures and
 
 Disposable recovery rehearsal on 2026-09-11 passed from a blank fake user profile: fresh Ryladmin/Project/Website clone topology, fail-closed runtime render, independent verification, live-ref discovery, and idempotent second apply all passed. The rehearsal caught and corrected a manifest rendering typo, a stale Codex hash, an unsafe Git-exit-code comparison, and an invalid requirement for untracked .ensemble-project-root.
 
-## Exact continuation - C10 blocked pending disposition
+## Exact continuation - C10 blocked pending upstream capability trigger
 
 Before acting in a fresh session, re-resolve live Ryladmin and Ensemble Project refs. Read Ryladmin `AGENTS.md`/`CURRENT_STATE.md`, then Project `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_AUTHORITY.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, `docs/AGENT_TOOLING_CAPABILITY_SNAPSHOT.md`, and `docs/blueprint/CODEX_ADMINISTRATOR_RUNTIME_SPECIFICATION.md`. Reconcile any newer Engineering/provider/validation state before relying on this snapshot.
 
 If the commissioned machine/runtime is lost, replaced, or materially differs from the recorded realization, complete `docs/ADMINISTRATOR_DISASTER_RECOVERY.md` and `recovery/verify-recovery.ps1` before Administrator execution. Durable C0-C9 gate history and the C10 falsification survive machine loss; replacement-machine capabilities do not.
 
-There is currently **no earned successor Administrator gate**. C10 is blocked/falsified on the tested `codex-cli 0.153.4` realization because deliberate nonzero `PreToolUse` failure was fail-open. C11 and Automations remain blocked. Preserve the C10 fixture and local evidence. Do not rebuild/retrust/retest the Hook, change Codex versions, or reinterpret the contract without explicit Project/Director disposition establishing a new realization/revalidation event.
+There is currently **no earned successor Administrator gate**. C10 remains blocked/falsified on the tested `codex-cli 0.153.4` realization. Do not consume a live `0.154.0` C10 attempt: it is source-disqualified by unchanged relevant fail-open implementation. Preserve the C10 fixture and local evidence. First inspect a future exact Codex candidate's source/release; only if the fail-closed upstream-capability trigger is proven may a new exact realization be proposed for explicit Project/Director opening and the strengthened suite. C11 and Administrator Automations remain blocked throughout.
 
 Do not start provider traffic/spend, validation promotion, Design/ODR adjudication, danger-full-access, automatic merge, or automatic unique-branch deletion from this blocker. Preserve active Engineering work, unexplained unique refs, detached validation/evidence worktrees, and shared-Git serialization. Ryladmin records continuity only; live owning repositories remain authoritative.
