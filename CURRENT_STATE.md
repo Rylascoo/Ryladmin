@@ -20,9 +20,25 @@ At this snapshot, Project native validation authority remains `bb869fb1c50560361
 
 ## Administrator gate status
 
-**C0-C9 DONE. C10 - Hook pilot is the sole next earned Administrator gate at the last Project reconciliation. C11+ remain blocked.**
+**C0-C9 DONE. C10 - Hook pilot is IN PROGRESS and not yet passed. C11+ remain blocked.**
 
-C9 creates no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. Claude remains advisory. C10 must be recovered from the live Runtime Specification/queue before use rather than inferred from this summary.
+C9 creates no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. Claude remains advisory. C10 remains bounded by the live Runtime Specification/queue and the incomplete pilot state below.
+
+## C10 Hook pilot - incomplete fresh-chat handoff
+
+C10 is the sole active Administrator commissioning gate. It is not closed. Normal Administrator `config.toml` still has `features.hooks = false`; Hooks are enabled only for bounded C10 pilot invocations. Automations remain blocked until C11.
+
+Disposable fixture: `C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Admin-C10-Hook-Fixture`, baseline HEAD `70a0f6f90eff4a1a0772beb109d14b8e3393f387`. Its dirty/untracked pilot evidence is intentional; do not clean or repurpose it before C10 evidence is reconciled. The authoritative Project root remains separately clean/detached at its historical validation checkout.
+
+Pilot implementation: user hook config `C:\\Users\\Wiryl\\.codex-ensemble\\hooks.json`; guard `C:\\Users\\Wiryl\\.codex-ensemble\\hooks\\c10-protective-guard.py`; Windows wrapper `C:\\Users\\Wiryl\\.codex-ensemble\\hooks\\c10-guard.cmd`. The one `PreToolUse` matcher covers `Bash|shell_command|exec_command`, timeout 5 seconds. The guard deterministically allows ordinary commands, denies commands containing `C10_FORBIDDEN`, and deliberately exits nonzero for commands containing `C10_HOOK_FAILURE`.
+
+Direct preflight proved the Python guard's allow JSON, deny JSON with explicit blocking reason, and deliberate nonzero failure branches. The first Codex-trusted definition used embedded quoted executable paths, hash `sha256:9665c3a5fb20d77d7e5f8f38de33a083c1b0544fe1ff54c91cdcfa7ce7b021ec`. A live allowed-action attempt produced `PreToolUse Failed`; the guard log showed the script was never reached and the harmless command executed. Treat that attempt as rejected pre-proof and evidence of a Windows hook-launch/possible fail-open path, not as a C10 pass.
+
+The definition was corrected to the no-space `.cmd` wrapper. Codex changed the hash to `sha256:96ca6c600481fd14fa68f44f76e7de5e86d6a17c305c514e75bf780363fc3d72` and reported `trustStatus=modified`, directly proving content-hash trust invalidation. Trust was then renewed through Codex's supported config API, never through `--dangerously-bypass-hook-trust`. After the latest RDC restart, a fresh app-server `hooks/list` readback reports the corrected exact hash with `trustStatus=trusted`, no warnings/errors.
+
+Exact remaining C10 execution: (1) one harmless allowed shell command must fire the hook and execute; (2) one harmless command containing `C10_FORBIDDEN` must be denied before execution with the explicit guard reason; (3) one harmless command containing `C10_HOOK_FAILURE` must prove fail-closed behavior. If case 3 executes after the hook process fails, classify C10 as blocked by Codex fail-open semantics and do not weaken the Runtime Specification. Preserve hook logs/output and prove no Project authority rewrite. Do not start C11.
+
+RDC was restarted by the Director immediately before this handoff and SurfSeven is reachable again. Do not rely on any old app-server PID/session; start a fresh census as needed and re-list the hook rather than recreating or retrusting it.
 
 ## C9 Claude read-only review closeout
 
