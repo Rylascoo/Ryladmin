@@ -8,83 +8,90 @@ This file carries Administrator continuity only. It never overrides Ensemble Pro
 
 ## Last reconciled Ensemble authority
 
-`Rylascoo/Ensemble-Project` last reconciled at `main@8e486567e8d3f43f01c065a083f3fa1f9ba724e9` after C6 closeout merge and hosted post-merge Validation #630 PASS. Re-resolve `main` before relying on this SHA.
+`Rylascoo/Ensemble-Project` was last reconciled at `main@89e5200052e8379caf308833568eb3f832925f37`.
 
-At that snapshot, Project `CURRENT_STATE.md` records E0-A Phase B / Q-E0A-03 ACTIVE with Run 04 `E0A-Q03-G35L-20260910-04` preexecution gates PASS and ready for exactly one Gemini 3.5 Flash-Lite full-reference execution under standing Project/Director authority. Current promoted native validation authority remains `e052ef4cdaf8ac7291971f8c42d121e1ee6eecf0`. Run-04 provider execution, no-retry/no-fallback law, credential use, consumption logging, and result classification remain Project/Director authority; Administrator C6 did not invoke provider traffic or promote validation. These are snapshots only and remain owned by the Project repository.
+Administrator C7 entered Project `main` through PR #68 merge `7608ab8e192dca77fa8ba649adec1e7963cf27a2`; hosted post-merge Validation #633 passed at that exact SHA. Active Engineering then advanced `main` to `89e5200052e8379caf308833568eb3f832925f37` by integrating the Run-04 role control-identity alignment; hosted Validation #636 passed at that exact SHA.
+
+At that later Project snapshot, promoted native Windows ARM64 authority is `29b62a2e778d93c6727b555f58f8d22aa18665a1` under tag `validation/e0a-role-control-identity-alignment-native-arm64`. Run 04 is immutable/noncontributing after a deterministic Performer `InvalidOutput`; its provider use and all future provider activation remain Project/Director authority.
+
+Project `CURRENT_STATE.md` at `89e5200052e8379caf308833568eb3f832925f37` still says the role control-identity package is "integration pending" and instructs Engineering to integrate it, even though that commit is the integration merge and Validation #636 is green. Treat this as an Engineering-owned continuity defect. Ryladmin must not repair Project authority merely to make this snapshot internally tidy and must not infer a new provider execution boundary from the merge/CI facts alone.
+
+Project `docs/PROJECT_EXECUTION_QUEUE.md` at the same ref records Administrator C0-C7 DONE and C8 as the only earned Administrator gate.
 
 ## Administrator gate status
 
-**C0-C6 DONE. C7 — Real local-evidence pilot is the sole next earned Administrator gate. C8+ remain blocked.**
+**C0-C7 DONE. C8 — Browser/CDP pilot is the sole next earned Administrator gate. C9+ remain blocked.**
 
-C0-C5 commissioning history remains authoritative in the Project evidence chain. C5 commissioned the per-common-Git-directory shared-Git lock and PR-only Project promotion lifecycle; C4's separate top-level Worker remains commissioned. Administrator remains read-only/on-request except for the already-commissioned bounded lifecycle mechanics.
+C0-C6 commissioning history remains preserved in Project evidence and Ryladmin history. C7 closes only the real local-evidence pilot; it creates no Engineering, provider, spend, validation, Design, ODR, or later-gate authority.
 
-## C6 cross-lane transport closeout
+## C7 real local-evidence closeout
 
-C6 tested GitHub Issues only as optional ephemeral cross-lane dispatch/result transport. The canonical backlog remained `Rylascoo/Ensemble-Project/docs/PROJECT_EXECUTION_QUEUE.md` and no Issue was permitted to become phase, priority, approval, or authority state.
+C7 used only preserved closed Run-03 specimen `C:\Users\Wiryl\Sol Dev\Ensemble-Project-Evidence\E0A-Q03-G35L-20260910-03`; Run 04 was explicitly excluded from inspection.
 
-### Transport proof
+Mechanical proof and independent R1 manager audit both established:
 
-- Target transport fixture: `Rylascoo/Ensemble-Website#55`.
-- Dispatch was pinned to Project `62a3124853da5cff75ea7b6edda7926c602569c8` and Website `0eae070b16308702095c1a0b6932392fdcdd219c` at readback time.
-- Packet carried source/target roles, central queue item, exact refs, bounded question, granted authority, allowed/prohibited scope, expected result, stop conditions, return target, and model/reasoning/mode/usage metadata.
-- Return comment recorded `PACKET_COMPLETENESS: PASS`, `STALE_BASELINE: NO`, `TARGET_AUTHORITY_MUTATED: NO`, `CENTRAL_QUEUE_MUTATED: NO`, and `INDEPENDENT_STATUS_CREATED: NO`.
-- Issue closed `completed`; its open/closed state was transport lifecycle only.
-- No Design adjudication or repository mutation, provider traffic/spend, validation promotion, labels, milestone, assignee, independent backlog, browser/CDP, Claude, Hooks, Automations, or C7+ work occurred.
+- 63 specimen files total; 62 artifacts sealed by `run.final.json`;
+- all 62 recorded artifact paths/hashes matched with no missing, duplicate, extra, unsafe, or reordered sealed paths;
+- runtime root `917254de3bc1229c1996a53c495e886e2a735ec898cbfba9adba5c51695f563a` recomputed exactly;
+- seal identity `58093b2f4c653336c647b7eea1c5f4179dcdc20b9c010943aaeb146b998715b5` recomputed exactly;
+- terminal classification `InvalidOutput` after six accepted turns;
+- 21 provider-successful role attempts plus 21 token-count preflights reconcile the sealed 42-request accounting;
+- final Interpreter provider response was schema-shaped/provider-successful but violated deterministic application semantics;
+- no provider/API traffic, source correction, validation promotion, permission broadening, or Run-04 interaction occurred.
 
-C6 disposition: GitHub Issues are admitted only as optional **ephemeral dispatch/result transport**. They are never backlog, priority, phase, approval, or authority state. A receiving lane/session must still recover its own authority before acting.
+The manager audit corrected one classification boundary: Project-recorded ZIP/stdout/secret-scan facts and provider-global logs were outside the supplied C7 specimen and therefore were recorded as **not independently revalidated**, not promoted into an `EVIDENCE_FAILURE` merely because they were unavailable locally.
 
-### Project reconciliation and promotion
+Two runtime observations remain explicit re-verification items before C8 depends on them: noninteractive Codex reported `approval: never` despite the launcher/runtime intent of read-only/on-request, and the optional Codex GitHub connector returned OAuth `AuthRequired`. Neither observation broadened permissions or invalidated C7.
 
-C6 failed closed across two concurrent Engineering advances rather than overwriting them. It first reconciled Project `main` from `7af2a17f10e8e8fa24b4271d3d4015746ceda74b` to `62a3124853da5cff75ea7b6edda7926c602569c8`, then later rebuilt the closeout on Run-04 activation baseline `0b715ee67315975ad02d5d3bcccfd998e8cbbda6`.
+Durable Project evidence: `docs/evidence/CODEX_ADMINISTRATOR_C7_REAL_LOCAL_EVIDENCE_PILOT_2026_09_10.md`.
 
-Final reconciled candidate:
+## C7 Project promotion / archive / disposal
 
-- candidate `80491364aca542c4957c6189153fdaca4ba0dcf5`, directly parented on `0b715ee67315975ad02d5d3bcccfd998e8cbbda6`;
-- exactly five changed files: `CURRENT_STATE.md`, `docs/AGENT_TOOLING_CAPABILITY_SNAPSHOT.md`, `docs/DOCUMENT_INDEX.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and `docs/evidence/CODEX_ADMINISTRATOR_C6_CROSS_LANE_TRANSPORT_PILOT_2026_09_10.md`;
+- audited candidate `d9e877ab75f76811c15769dc149f418425219e8a`, directly parented on C6 merge `8e486567e8d3f43f01c065a083f3fa1f9ba724e9`;
+- exactly five changed files: `CURRENT_STATE.md`, `docs/AGENT_TOOLING_CAPABILITY_SNAPSHOT.md`, `docs/DOCUMENT_INDEX.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and the C7 evidence record;
 - protected-diff PASS with only `CURRENT_STATE.md` and `docs/PROJECT_EXECUTION_QUEUE.md` explicitly adopted;
-- commissioning-closeout PASS: repository law, document authority census, oracle coverage, and `git diff --check` all PASS; zero unexplained protected/current documents; `validation_rung_promoted=false`;
-- Push Validation #628 PASS;
-- PR #67 Validation #629 PASS;
-- PR #67 E0-E preparation gate #23 PASS;
-- PR #67 merge `8e486567e8d3f43f01c065a083f3fa1f9ba724e9`;
-- post-merge Validation #630 PASS.
+- commissioning-closeout PASS: repository law, document authority census, oracle coverage, `git diff --check`, exact clean head, zero unexplained protected/current documents, and `validation_rung_promoted=false`;
+- Push Validation #631 PASS;
+- PR #68 Validation #632 PASS;
+- PR #68 E0-E preparation gate #24 PASS;
+- PR #68 merge `7608ab8e192dca77fa8ba649adec1e7963cf27a2`;
+- post-merge Validation #633 PASS.
 
-Durable Project evidence: `docs/evidence/CODEX_ADMINISTRATOR_C6_CROSS_LANE_TRANSPORT_PILOT_2026_09_10.md`.
+Final clean archive tag: `archive/q-admin-02-c7-real-local-evidence-2026-09-10`.
 
-### Promotion incident disposition
+Tag object: `89233a9bb31ffe4b383b82c779fdb8a1b9389ebe`.
 
-Two operator-side connector-selection errors were fail-closed and durably classified. Neither contaminated Project `main`.
+Local/remote peel: exact candidate `d9e877ab75f76811c15769dc149f418425219e8a`.
 
-- Project Issue #65 was accidentally created with placeholder content, immediately retitled `[VOID] Accidental connector invocation during C6 closeout`, explicitly classified as carrying no task/authority/priority/backlog/requested work, and closed `not_planned`.
-- A later wrong file-create operation produced one empty remote-only `NOOP` file in commit `ef3b9be35ca629fbafa3b5c545a89ec71c466bcb`, parent `a68224a40cdd3105a650cdf2b278aea5d78d5983`. Deterministic inspection confirmed the only path was `NOOP` and its blob size was zero.
-- That polluted commit is preserved by annotated tag `archive/q-admin-02-c6-polluted-noop-2026-09-10`, tag object `d6f604f684365c9f1cb07c15305fb56a70bcc847`, peeling locally/remotely to exact `ef3b9be35ca629fbafa3b5c545a89ec71c466bcb`.
-- The polluted remote branch was retired without force-push or history rewrite.
-- Procedural correction: future promotion uses the explicitly discovered pull-request operation, never selector inference.
-
-### C6 final archive / disposal
-
-- Final clean archive tag: `archive/q-admin-02-c6-closeout-reconciled-2026-09-10`.
-- Tag object: `69fa3bc14a1942ebed277914b0c9830aab1e91b0`.
-- Local/remote peel: exact candidate `80491364aca542c4957c6189153fdaca4ba0dcf5`.
-- Candidate and merge were verified reachable from authoritative `origin/main` before disposal.
-- Both C6 temporary remote branches, local branches, and worktrees were retired after clean/tag/ancestry checks.
-- Final shared-Git lock residue: zero.
-- Unrelated Engineering and detached validation/evidence worktrees were preserved.
+Before disposal, a fresh locked fetch found concurrent Engineering had advanced `origin/main` to `89e5200052e8379caf308833568eb3f832925f37`; the C7 candidate remained an ancestor. The C7 worktree, local branch, and remote branch were then retired. Final shared-Git lock residue was zero. Unrelated Engineering and detached validation/evidence worktrees were preserved.
 
 ## Commissioned runtime continuity
 
-Shared-Git helper: `C:\Users\Wiryl\.codex-ensemble\bin\ensemble-git-lock.ps1`.
+Shared-Git helper remains `C:\Users\Wiryl\.codex-ensemble\bin\ensemble-git-lock.ps1`, SHA-256 `A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830`.
 
-Helper SHA-256: `A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830`.
+Runtime manifest remains the post-C5 realization, SHA-256 `D19CD1333E0642960FED60D75BFDCF1BFCAAE1DD3AD2B7BC0C7FB6D6E2D743F9`; C6 and C7 changed no runtime configuration. Pre-C5 rollback manifest remains `C:\Users\Wiryl\.codex-ensemble\backups\C5-shared-git-lock-20260910T235807Z`.
 
-Runtime manifest after C5 commissioning remains SHA-256 `D19CD1333E0642960FED60D75BFDCF1BFCAAE1DD3AD2B7BC0C7FB6D6E2D743F9`; C6 changed no runtime configuration. Pre-C5 rollback manifest remains `C:\Users\Wiryl\.codex-ensemble\backups\C5-shared-git-lock-20260910T235807Z`.
+## Ryladmin continuity-update incident
 
-C6 did not broaden Worker, app, browser/CDP, provider, Hook, Automation, Claude, validation, Design, or ODR authority.
+During this C7 continuity repair, six operator-side connector-selection errors occurred during the continuity update. The first two mutated Ryladmin `main`; the third through sixth affected only the temporary continuity branch. All were immediately corrected and none changed Ensemble Project/Website repositories.
 
-## Exact continuation — C7
+1. Commit `11c1201adfa5485d982b6be396f7bfa6f4aadbb8` added one empty `NOOP` file (empty-blob SHA `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`). Correction commit `91dfebe408cf27ec6e441974873ea25ffab67c50` deleted only that file.
+2. Commit `68f3de016aefc369a465a15d4e23c4bc6e1b0c42` added `CURRENT_STATE.md.tmp` containing only `placeholder` (blob SHA `b3a425249b207819e63bf9a2716fd16f63b0f7b7`). Correction commit `2fdc58073bd800187baa8388636ed8d2ae4e1761` deleted only that file.
+3. Temporary-branch commit `b1e539339460bc95ac175ed98631c5e0acaff867` added `PR_BODY_DO_NOT_USE.md` containing only `x` (blob SHA `c1b0730e0133447badcfd47fd144e254807b06e1`). Correction commit `ff58035487c173e5b749c34fb7c2fe87335e7ff9` deleted only that file before any PR was opened; Ryladmin `main` was unaffected.
+4. Temporary-branch commit `0d8cd2b6369bfd2b74b65c5b9f09c9ac8aa76238` added `SHOULD_NOT_EXIST` containing only `error` (blob SHA `760589cb5d616f3b4c4a315819e140052e82334d`). Correction commit `123358df74594148ed7e90ac44f97ce8663ec89f` deleted only that file before any PR was opened; Ryladmin `main` was unaffected.
+5. Temporary-branch commit `cdf91a6f0405597a7e7b6ef9ecc03df764336641` added `THIS_TOOL_CALL_IS_WRONG_AGAIN` containing only `x` (blob SHA `c1b0730e0133447badcfd47fd144e254807b06e1`). Correction commit `24c314294d764499d30ffdcd2be96efdb619e866` deleted only that file before any PR was opened; Ryladmin `main` was unaffected.
+6. Temporary-branch commit `6bb57c38c91aa80af70192f4e5834da05341c763` added `NO_MORE` containing only `x` (blob SHA `c1b0730e0133447badcfd47fd144e254807b06e1`). Correction commit `26caf8c6da587146fd3dd6fc5c3a09b75b89657f` deleted only that file before any PR was opened; Ryladmin `main` was unaffected. This exposed the root cause: loading the GitHub file-operation subset had displaced the previously loaded pull-request operation set.
 
-Before acting, fresh-read live Project `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_AUTHORITY.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and `docs/blueprint/CODEX_ADMINISTRATOR_RUNTIME_SPECIFICATION.md`. Reconcile current live `main`, active Engineering/provider work, CI/ref truth, and local topology first.
+GitHub comparison from pre-incident Ryladmin `0c02f1fcdc20e449f73d388da727a2188f8e035c` through corrected `2fdc58073bd800187baa8388636ed8d2ae4e1761` reported four commits but **zero changed files**, proving the repository tree was restored before this real continuity branch began.
 
-C7 is the Runtime Specification **Real local-evidence pilot** and is the sole next earned Administrator gate. Recover its exact contract from current Project authority; do not infer requirements from this summary. The current queue states that preserved Q-E0A-03 terminal evidence is the preferred read-only specimen only when doing so does not delay or replace active Engineering. C7 does not authorize a provider call, source correction, validation-rung promotion, authority mutation, or C8+ work.
+Procedural correction: continuity file edits are performed only from an isolated local Ryladmin branch. Before PR creation, explicitly load the GitHub pull-operation set; direct connector file mutation of Ryladmin `main` is not part of the continuation workflow.
 
-Preserve active Engineering work, unexplained unique refs, detached validation/evidence worktrees, and shared-Git serialization. Do not infer browser/CDP, Claude, Hooks, Automations, provider/spend, Design/ODR adjudication, or later-gate authority from C7.
+## Exact continuation — C8
+
+Before acting, re-resolve live Ryladmin and Project `main`; read Ryladmin `AGENTS.md`/`CURRENT_STATE.md`, then Project `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_AUTHORITY.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and `docs/blueprint/CODEX_ADMINISTRATOR_RUNTIME_SPECIFICATION.md`. Reconcile any newer Engineering/provider/validation state before relying on this snapshot.
+
+C8 is the Runtime Specification **Browser/CDP pilot** and is the sole earned Administrator gate. Recover its exact current contract from Project authority rather than this summary. At the C7 closeout snapshot, C8 requires a dedicated Kymaean browser profile and proof of origin/session isolation, bounded browser permissions, evidence labeling, and safe teardown; no unrelated authenticated session may be visible.
+
+Before C8 depends on Codex approval semantics or its optional GitHub connector, reverify the C7 observations (`approval: never` in the noninteractive run; GitHub connector OAuth `AuthRequired`) against current runtime/tool behavior. Do not weaken the sandbox, expose unrelated sessions, or treat a connector/auth defect as permission to broaden access.
+
+Do not start C9, Claude, Hooks, Automations, provider traffic/spend, validation promotion, Design/ODR adjudication, or any broader permission surface from C8. Preserve active Engineering work, unexplained unique refs, detached validation/evidence worktrees, and shared-Git serialization.
