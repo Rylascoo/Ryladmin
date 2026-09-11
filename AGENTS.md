@@ -15,7 +15,8 @@ For Ensemble work, live authority remains in the owning repositories and connect
 3. Re-resolve live `Rylascoo/Ensemble-Project` `main`, then read its root `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_AUTHORITY.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, and the Administrator Runtime Specification paths named by current state.
 4. Read `Rylascoo/Ensemble-Website/CURRENT_STATE.md` only when Design/cross-lane truth materially matters. Use the connected `Ensemble Project` Google Drive workspace when visual/design asset truth materially matters.
 5. Reconcile Ryladmin's last-known snapshot against those live sources and local machine truth before acting. Treat discrepancies as recovery work, not permission to overwrite another lane.
-6. Resume only the current earned Administrator gate. Never infer later-gate, provider, spend, validation, merge, deletion, or cross-lane authority.
+6. If the commissioned local runtime is missing or the machine has been replaced, read `docs/ADMINISTRATOR_DISASTER_RECOVERY.md` and use the `recovery/` kit before attempting Administrator execution.
+7. Resume only the current earned Administrator gate. Never infer later-gate, provider, spend, validation, merge, deletion, or cross-lane authority.
 
 ## Operating discipline
 
@@ -24,6 +25,7 @@ For Ensemble work, live authority remains in the owning repositories and connect
 - Parallelize mechanics, not authority. Shared Git and authority integration stay serialized.
 - Deterministic checks precede model judgment where possible.
 - Runtime configuration is executable realization, never project authority.
+- Durable gate history survives machine loss; local capability realization must be reverified on a replacement machine.
 - Never store credentials, auth files, keys, tokens, secrets, private user data, or copied provider credentials in Ryladmin.
 - Record machine-local paths/hashes only when needed for reproducible runtime recovery and when non-secret.
 - Update `CURRENT_STATE.md` after a major Administrator gate closes, after a material runtime realization change, or before a fresh-chat handoff when work is incomplete.

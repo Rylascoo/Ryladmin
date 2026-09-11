@@ -1,0 +1,30 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+approval_policy = "never"
+default_permissions = "ensemble-worker-workspace"
+allow_login_shell = false
+web_search = "disabled"
+developer_instructions = """
+You are the Ensemble top-level Worker. Execute only the exact bounded dispatch packet supplied for the exact isolated worktree. Make the smallest justified workspace change and return attributable tests/evidence. Do not create/remove worktrees, mutate shared Git metadata, fetch, push, merge, retag, dispose branches, edit manager-owned authority surfaces, use provider credentials/APIs, authorize external actions, promote validation, or spawn subagents. If required work exceeds the packet or sandbox, fail closed and return the discrepancy.
+"""
+
+[apps._default]
+enabled = false
+open_world_enabled = false
+destructive_enabled = false
+
+[agents]
+enabled = false
+max_concurrent_threads_per_session = 1
+
+[features]
+apps = false
+remote_plugin = false
+memories = false
+hooks = false
+browser_use = false
+browser_use_external = false
+browser_use_full_cdp_access = false
+computer_use = false
+multi_agent = false
+goals = false

@@ -1,0 +1,72 @@
+{
+    "schema":  "ensemble.administrator-recovery-baseline.v1",
+    "verified_on":  "2026-09-11",
+    "authority_notice":  "Historical recovery snapshot only; fresh owning-repository state always wins.",
+    "platform":  {
+                     "os":  "Windows",
+                     "architecture":  "ARM64"
+                 },
+    "repositories":  {
+                         "admin_continuity":  "https://github.com/Rylascoo/Ryladmin.git",
+                         "project_authority":  "https://github.com/Rylascoo/Ensemble-Project.git",
+                         "design_authority":  "https://github.com/Rylascoo/Ensemble-Website.git"
+                     },
+    "snapshot_refs":  {
+                          "project_main":  "2ec8905f2998f94e2650e89510989753c589ce43",
+                          "website_main":  "017458bd8b5453d3a048ef8a0a60dc68fb5cbc31",
+                          "c9_candidate":  "9db16f96dbd2e612b200e2f7ae45ba5a0afe8484",
+                          "c9_merge":  "78026f3fae040dabcdd55fe0adc331c06ffa2b21",
+                          "c9_archive_tag":  "archive/q-admin-02-c9-claude-review-closeout-2026-09-11",
+                          "c9_archive_tag_object":  "97c6424e4af07bf91788dc4ce52532d0fbe45ac5"
+                      },
+    "administrator_gate_history":  {
+                                       "closed_through":  "C9",
+                                       "snapshot_next":  "C10"
+                                   },
+    "tools":  {
+                  "codex":  {
+                                "version_output":  "codex-cli 0.153.4",
+                                "sha256":  "77F792476FE0DEF726503F02A7C55F485E562DD7AD8801FE61DC8F4BF9991D20"
+                            },
+                  "python":  {
+                                 "version_output":  "Python 3.12.10",
+                                 "architecture":  "ARM64",
+                                 "sha256":  "7F1EBBBB04164CAF8F8073AAFA7F82321FB44695E10FE6A9EBAF2138B63892C4"
+                             },
+                  "claude_code":  {
+                                      "version":  "2.1.267",
+                                      "auth_class":  "claude.ai Pro subscription; reauthenticate interactively"
+                                  },
+                  "remote_desktop_commander":  {
+                                                   "version":  "0.2.50",
+                                                   "device_identity":  "replacement-machine specific"
+                                               }
+              },
+    "surfseven_realization_hashes":  {
+                                         "config_toml":  "7985C3BC1027DC893BF45BFB17B5586CD82D27AA15F8A75AA3759CC0DC3D9C02",
+                                         "ensemble_admin_ps1":  "CE633DD5DA40C09CBDFFC8DECEA0548FB47A16962DC473FDB414EFE185124BA1",
+                                         "ensemble_git_lock_ps1":  "A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830",
+                                         "runtime_manifest_json":  "D19CD1333E0642960FED60D75BFDCF1BFCAAE1DD3AD2B7BC0C7FB6D6E2D743F9"
+                                     },
+    "safety_defaults":  {
+                            "sandbox_mode":  "read-only",
+                            "approval_policy":  "on-request",
+                            "network_access":  false,
+                            "browser":  false,
+                            "computer_use":  false,
+                            "hooks":  false,
+                            "automations":  false,
+                            "memories":  false,
+                            "multi_agent":  false,
+                            "goals":  false,
+                            "provider_traffic_authorized_by_recovery":  false
+                        },
+    "never_backup":  [
+                         "Codex/ChatGPT auth tokens or auth.json",
+                         "Claude OAuth/session files or API keys",
+                         "Git credentials",
+                         "browser cookies/history/passwords or personal profiles",
+                         "Codex session/log/memory/goal/cache SQLite state",
+                         "private Design assets outside their authorized storage surface"
+                     ]
+}
