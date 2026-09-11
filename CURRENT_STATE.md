@@ -73,11 +73,12 @@ Runtime manifest remains the post-C5 realization, SHA-256 `D19CD1333E0642960FED6
 
 ## Ryladmin continuity-update incident
 
-During this C7 continuity repair, three operator-side connector-selection errors occurred during the continuity update. The first two mutated Ryladmin `main`; the third affected only the temporary continuity branch. All were immediately corrected and none changed Ensemble Project/Website repositories.
+During this C7 continuity repair, four operator-side connector-selection errors occurred during the continuity update. The first two mutated Ryladmin `main`; the third and fourth affected only the temporary continuity branch. All were immediately corrected and none changed Ensemble Project/Website repositories.
 
 1. Commit `11c1201adfa5485d982b6be396f7bfa6f4aadbb8` added one empty `NOOP` file (empty-blob SHA `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`). Correction commit `91dfebe408cf27ec6e441974873ea25ffab67c50` deleted only that file.
 2. Commit `68f3de016aefc369a465a15d4e23c4bc6e1b0c42` added `CURRENT_STATE.md.tmp` containing only `placeholder` (blob SHA `b3a425249b207819e63bf9a2716fd16f63b0f7b7`). Correction commit `2fdc58073bd800187baa8388636ed8d2ae4e1761` deleted only that file.
 3. Temporary-branch commit `b1e539339460bc95ac175ed98631c5e0acaff867` added `PR_BODY_DO_NOT_USE.md` containing only `x` (blob SHA `c1b0730e0133447badcfd47fd144e254807b06e1`). Correction commit `ff58035487c173e5b749c34fb7c2fe87335e7ff9` deleted only that file before any PR was opened; Ryladmin `main` was unaffected.
+4. Temporary-branch commit `0d8cd2b6369bfd2b74b65c5b9f09c9ac8aa76238` added `SHOULD_NOT_EXIST` containing only `error` (blob SHA `760589cb5d616f3b4c4a315819e140052e82334d`). Correction commit `123358df74594148ed7e90ac44f97ce8663ec89f` deleted only that file before any PR was opened; Ryladmin `main` was unaffected.
 
 GitHub comparison from pre-incident Ryladmin `0c02f1fcdc20e449f73d388da727a2188f8e035c` through corrected `2fdc58073bd800187baa8388636ed8d2ae4e1761` reported four commits but **zero changed files**, proving the repository tree was restored before this real continuity branch began.
 
