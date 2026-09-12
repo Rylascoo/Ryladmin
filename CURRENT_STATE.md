@@ -209,6 +209,14 @@ Two untagged checkouts require explicit disposition before any removal. `E0V-ddb
 
 No Project branch, tag, worktree, file, validation rung, provider state, or Engineering authority was mutated by this census.
 
+### Project duplicate-worktree cleanup follow-through - 2026-09-12
+
+After the read-only census, two exact-head duplicate detached checkouts were re-proved as mechanically redundant and retired under the shared-Git lock: `e0a-gemini35-attempt04` duplicated clean canonical validator `e0a-bounded-provider-error-diagnostic-native-arm64` at tagged `e6e7d6c8c7187a87df2c97f2373dd3adbee7ce4a`, and `e0a-q03-g35l-20260909-01` duplicated clean canonical validator `e0a-counttokens-input-projection-native-arm64-attempt02` at tagged `3a010df5d26fc58d6f3820f2dc2cfbb0d015a9d2`. Both duplicate worktrees had zero tracked/untracked changes, only ignored build output, the same Project Git common directory, and exact validation-tag reachability. Their canonical validator checkouts and tags remain intact. Project worktree registration therefore fell from 13 to 11 without changing source, evidence, branches, validation authority, or active E0-B work.
+
+The previously unanchored divergent checkout `E0V-ddbea8b` remains locally preserved and clean, but its exact commit `ddbea8bbc7d564ef7215e7fb48b3c5cc87c697f5` is now durably protected by annotated tag `archive/e0a-gemini-technical-failure-diagnostic-prevalidation-ddbea8b` (tag object `caa58cdc2204914c977a0628a561a647a166c668`). The tag explicitly records that this commit is **not** native validation authority; current native authority remains `bb869fb1c505603612bc718f739b3f1b358e5539`. The failed CountTokens Attempt-01 checkout at `de38d5d52279c22a1786e11200239c445e04377b` remains untouched pending Engineering lifecycle disposition.
+
+Post-cleanup verification reconfirmed the historical root clean at `689655eed677b789ab3ee395f1c65b4f2cb72cc8` and current validator clean at `bb869fb1c505603612bc718f739b3f1b358e5539`. Concurrent Engineering advanced the active E0-B working copy during the final race check without moving its commit: it remains based on Project `main@ba02d1689680d8492a4c52675e7aba91935fd2dd`, has no remote branch, and now carries nine staged tracked changes (five modifications plus four additions) with zero untracked paths. Administrator did not inspect or alter those staged contents. Shared-Git lock residue returned to zero.
+
 ### Website branch-census boundary - 2026-09-12
 
 A read-only Design-repository census, race-reconciled after re-entry serial closeout to `Rylascoo/Ensemble-Website main@86a11d3eb58bea81dddf4dc74233e58dcf7fc2e7`, found 92 remote heads: `main` plus 91 non-main refs. Design law is stricter than the Project cleanup rule: a serial branch may be mechanically retired only after archival-tag readback and a strict-ancestor / zero-unique condition; any branch with unique commits remains preserved until Design gives an explicit disposition.
