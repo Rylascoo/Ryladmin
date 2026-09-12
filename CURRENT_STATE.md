@@ -10,13 +10,11 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 ## Last reconciled owning authority snapshots
 
-`Rylascoo/Ensemble-Project` was last reconciled at `main@8559574ca592456a0d41bb50979878b20903d4e2`, merge `Record C9A R2 live pilot falsification`. Its parents are exact prior main `a3288885c49c5d0fa28a2a4da665f5e182c30f3d` and audited R2 falsification closeout candidate `c73872bb5de44d89706283c9bc114054608f98e5`; the candidate is fully contained with no content difference. Push-triggered post-merge Validation #710 passed on the exact merge SHA.
-
-Project `CURRENT_STATE.md` records Q-E0A-03 DONE, Run 08 as the selected E0-A reference, Run 09 as terminal/noncontributing failed control evidence, and Q-E0B-01 as the immediate ACTIVE experiment-order successor. Provider traffic remains blocked pending separate current E0-B activation/authority. Ryladmin records this only as a snapshot and creates no provider or Engineering authority.
+`Rylascoo/Ensemble-Project` was last reconciled at `main@ba02d1689680d8492a4c52675e7aba91935fd2dd` on 2026-09-12. Live Project state records Q-E0B-01 **ACTIVE**, `E0B-MIXED-CAST-01` Director-approved, and bounded fake-first Harness/evidence implementation as the exact next Engineering action. Provider traffic remains blocked. The exact main ref had five hosted checks and all were successful: repository law, document authority census, oracle assertion coverage, ARM64 cross-compile, and required non-authoritative x64 regression. Ryladmin records this only as a snapshot and creates no Engineering/provider authority.
 
 Current Project native validation authority remains exact checkout `bb869fb1c505603612bc718f739b3f1b358e5539` under tag `validation/e0a-gemini-technical-failure-diagnostic-classification-native-arm64` according to the live Project state.
 
-`Rylascoo/Ensemble-Website` was last reconciled at `main@017458bd8b5453d3a048ef8a0a60dc68fb5cbc31`, `Complete TYP-02 branch promotion`. Design was not re-read for this Administrator-only C10 closeout because no Design/cross-lane decision was required. This remains a snapshot only.
+`Rylascoo/Ensemble-Website` was last reconciled at `main@af7bfa545e075c2f4fdd9a3bcd31ea01280f8c45` on 2026-09-12. STATE-S1 is closed with **F4 - Balanced Dual-Channel Ladder** as the sole provisional neutral static state-salience survivor; the exact Design next action is a bounded exact-incumbent Stage comparison method. This remains a Design snapshot only and creates no Engineering or Administrator visual authority.
 
 ## Administrator gate status
 
@@ -176,6 +174,16 @@ Durable C9 Project evidence: `docs/evidence/CODEX_ADMINISTRATOR_C9_CLAUDE_READ_O
 The C9 candidate is contained in Project main. Its worktree, local branch, and remote branch are retired. Final Project root remains clean/detached at historical validation checkout `689655eed677b789ab3ee395f1c65b4f2cb72cc8`; shared-Git lock residue is zero. Unrelated Engineering and validation/evidence worktrees were preserved.
 
 ## Commissioned runtime continuity
+
+### SurfSeven exact-path repair - 2026-09-12
+
+A fresh Administrator recovery audit found that the evolved C4-C10 SurfSeven runtime was still present and fail-closed, but the exact Codex executable path recorded by commissioned `runtime-manifest.json` no longer existed. The same admitted `codex-cli 0.153.4` bytes survived at `C:\Users\Wiryl\.codex-ensemble\.sandbox-bin\codex.exe`; version and SHA-256 exactly matched the commissioned manifest (`77F792476FE0DEF726503F02A7C55F485E562DD7AD8801FE61DC8F4BF9991D20`). The repair recreated only the missing manifest-selected path `C:\Users\Wiryl\AppData\Local\OpenAI\Codex\bin\02c7a9ff819938f0\codex.exe` from those byte-identical pinned bytes. No version substitution or C10 retest occurred.
+
+The evolved Administrator config was preserved, not replaced by the generic disaster-recovery template. Its SHA-256 at recovery was `5AD9714B4E2D07FEC4520DB65BB7AEDF5907AE2719BE80CEF307984F15E2C43B`; semantic census reconfirmed the commissioned `ensemble-admin-readonly` profile, Hooks/browser/computer-use/multi-agent/goals disabled, default apps off, only the admitted GitHub `fetch` tool enabled, and Worker command network disabled. Both Project and Website `ensemble-admin.ps1 -Check` preflights passed after the exact-path repair.
+
+The exact C10-evidence manifest remains SHA-256 `D19CD1333E0642960FED60D75BFDCF1BFCAAE1DD3AD2B7BC0C7FB6D6E2D743F9`. Its internal `files.config.toml` entry is an older commissioning census and does not equal the later post-C10 config hash above. Do **not** rewrite that historical manifest in place merely to make the internal census current: Project C10 evidence cites the exact manifest hash. If a future workflow needs a current runtime census, create and validate a versioned successor manifest rather than mutating the historical evidence object.
+
+Pre-repair runtime files are preserved locally at `C:\Users\Wiryl\.codex-ensemble\backups\runtime-drift-pre-recovery-20260912T060337Z`. A generic replacement-machine recovery render was separately preserved at `C:\Users\Wiryl\.codex-ensemble\backups\generic-recovery-render-before-correction-20260912T061050Z` after audit showed that adopting it on surviving SurfSeven would regress the evolved C4-C10 local realization. These local backups are non-authoritative troubleshooting evidence only.
 
 Historical SurfSeven realization remains useful as a reproducibility checkpoint, not as replacement-machine authority:
 
