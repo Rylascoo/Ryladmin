@@ -10,9 +10,9 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 ## Last reconciled owning authority snapshots
 
-`Rylascoo/Ensemble-Project` was last reconciled at `main@925c48eeec5489129b3590436e9c1c4072b969b5`, merge `Merge C10 upstream revalidation trigger disposition`. The exact disposition candidate `e92c2ba9a7234adaeab275c164537347a1c7f599` is the second parent of that merge commit and is fully contained in `main`.
+`Rylascoo/Ensemble-Project` was last reconciled at `main@635918d3b74cd99100cfab68eb798c3a9b5c6e25`, merge `Merge C9A timeout falsification closeout`. Its parents are exact prior main `ceb057f9b7aa66530044b6bcc4af1385e61e6840` and audited C9A closeout candidate `1b4182e584a65cdf821425e742c387272d88c1c6`; the candidate is fully contained with no content difference.
 
-Project `CURRENT_STATE.md` at the underlying live Engineering baseline records Q-E0A-03 Run 07 as reserved/unconsumed and non-executable pending the authenticated AI Studio project/key/quota gate; provider traffic is not authorized. Ryladmin records this only as a snapshot and creates no provider or Engineering authority.
+Project `CURRENT_STATE.md` records Q-E0A-03 ACTIVE with Director Option A approved: exactly one fresh `gemini-3.5-flash-lite` Standard/Free replacement may be preregistered/activated under the unchanged bounded envelope; provider traffic remains unauthorized until a separately durable exact activation and all current route/native/account/freshness/credential gates pass. Runs 03-07 remain immutable/noncontributing. Ryladmin records this only as a snapshot and creates no provider or Engineering authority.
 
 Current Project native validation authority remains exact checkout `bb869fb1c505603612bc718f739b3f1b358e5539` under tag `validation/e0a-gemini-technical-failure-diagnostic-classification-native-arm64` according to the live Project state.
 
@@ -20,9 +20,40 @@ Current Project native validation authority remains exact checkout `bb869fb1c505
 
 ## Administrator gate status
 
-**C0-C9 DONE. C10 - Hook pilot is BLOCKED / FALSIFIED and did not pass. C11+ remain blocked. No later Administrator gate is currently earned.**
+**C0-C9 DONE. C9A architecture is Director-approved, but its current dispatcher realization is BLOCKED / NOT COMMISSIONED after bounded timeout falsification. C10 remains BLOCKED / FALSIFIED. C11+ remain blocked. No successor live Administrator gate execution is currently earned.**
 
-C10 creates no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. Its failure does not weaken the Director-approved Runtime Specification. The Director has now defined a source-gated revalidation trigger, but C10 remains blocked until that upstream capability trigger is satisfied and a new exact realization is explicitly opened; C11 remains blocked.
+C9A and C10 create no Engineering, provider, experiment, product, Design, ODR, spend, or validation authority. C9 manual Claude review remains commissioned. The C9A amendment remains valid, but automated/on-demand Claude routing must not be claimed until a later corrected realization passes its commissioning contract. C10 separately remains blocked until its upstream fail-closed capability trigger is satisfied and a new exact realization is explicitly opened; C11 remains blocked.
+
+## C9A read-only Claude orchestration - amendment and timeout falsification
+
+The Director-approved Project amendment decouples a strictly repository-read-only, on-demand Claude advisory dispatcher from C10. The amendment was integrated on Project main before the pilot and remains valid. It does not reinterpret C10, enable C11, admit scheduling/background behavior, or permit mutation/authority/provider side effects.
+
+One implementation realization was constructed on SurfSeven and passed its offline adversarial tests for deterministic packet construction, first-party-auth fail-closed behavior, repository mutation detection, scratch isolation, legacy Administrator Skill fixtures, repository law, document census, oracle coverage, and diff hygiene. Before live execution it was hardened with Claude `--safe-mode` and a 180-second hard subprocess bound. The exact uncommissioned implementation candidate is `1ba744a0fdcd827437b3001d72945aece17b4750`.
+
+Live C9A attempt 1 used an 84,199-byte exact-ref packet, SHA-256 `49B664E04EC7898D6BA61F98DEA985D0B016A5493E79BA748067EC077D3491C9`. It produced no structured result before the 180-second hard bound and failed closed. Scrubbed Claude authentication immediately reverified as `claude.ai` / `firstParty` / Pro, and version `2.1.267` returned promptly, so the failure was not attributed to missing login or an API/cloud billing fallback.
+
+A single explicit corrected-attempt decision changed the hypothesis by materially narrowing the packet while keeping isolation controls unchanged. Attempt 2 used a 30,565-byte packet, SHA-256 `0693778EC7C2FA58DB04F6E4C4857860EF163CC22EF2A0AB4C063EB0B924BC7E`, and again produced no structured result before the same 180-second hard bound. Therefore packet size alone is not a sufficient explanation. No third live attempt was authorized or consumed.
+
+Both attempts preserved zero Project repository/ref/worktree mutation. The failed implementation was **not merged**. It is preserved by Project archive tag `archive/q-admin-02-c9a-uncommissioned-timeout-2026-09-11`, annotated tag object `a483b9c68b95a940c7e89b9d9c254c91d3eda47b`, peeling to exact candidate `1ba744a0fdcd827437b3001d72945aece17b4750`.
+
+Durable Project falsification evidence: `docs/evidence/CODEX_ADMINISTRATOR_C9A_READ_ONLY_CLAUDE_ORCHESTRATION_TIMEOUT_FALSIFICATION_2026_09_11.md`. Director amendment: `docs/evidence/CODEX_ADMINISTRATOR_C9A_READ_ONLY_CLAUDE_ORCHESTRATION_DIRECTOR_AMENDMENT_2026_09_11.md`.
+
+### C9A timeout closeout Project promotion / archive / disposal
+
+- closeout base: `ceb057f9b7aa66530044b6bcc4af1385e61e6840`;
+- audited documentation/state closeout candidate: `1b4182e584a65cdf821425e742c387272d88c1c6`;
+- repository law, document census, oracle guard, diff hygiene, protected-diff and commissioning-closeout: PASS;
+- adopted protected surfaces: `CURRENT_STATE.md` and `docs/PROJECT_EXECUTION_QUEUE.md`; `authority_created=false`, `validation_rung_promoted=false`;
+- PR #85 exact base/head; PR Validation #684 and E0-E preparation #39: PASS;
+- merge: `635918d3b74cd99100cfab68eb798c3a9b5c6e25`, exact parents base + candidate;
+- push-triggered post-merge Validation #687, workflow run `34659763136`: PASS;
+- closeout archive tag: `archive/q-admin-02-c9a-timeout-closeout-2026-09-11`;
+- annotated tag object: `1fab3b4d9f2f3e9a976ffe26fcc55b3001b8c989`;
+- tag peel: exact closeout candidate `1b4182e584a65cdf821425e742c387272d88c1c6`;
+- closeout branch/worktree/remote branch retired; normal Project root remains clean/detached at historical validation checkout `689655eed677b789ab3ee395f1c65b4f2cb72cc8`;
+- the separate uncommissioned implementation archive tag is retained; concurrent Engineering work was preserved.
+
+A future C9A live attempt must **not** retry either preserved packet. First perform non-live analysis of current Claude print/structured-output behavior, timeout/effort tradeoffs, and dispatcher post-failure snapshot/telemetry behavior; then record an explicit corrected-attempt decision with a materially changed hypothesis before one new live attempt. Do not weaken the read-only isolation contract merely to obtain a result.
 
 ## C10 Hook pilot - durable falsification closeout
 
@@ -148,16 +179,18 @@ Ryladmin now carries the portable non-secret recovery surface:
 
 The kit intentionally excludes all auth tokens/files, Claude OAuth state, API keys, Git credentials, browser/profile data, Codex databases/logs/sessions/memories, machine installation IDs, and private Design assets outside their authorized storage. Connector IDs and machine/device IDs are treated as re-discoverable bindings, not authority.
 
-A replacement machine may preserve C0-C9 as durable historical gate closures and the C10 falsification as durable gate evidence, but may not use a local capability until the recovered machine verifies that capability's realization. Tool-version/hash drift requires explicit revalidation; the bootstrap never silently substitutes a new binary or overwrites differing runtime files.
+A replacement machine may preserve C0-C9 as durable historical gate closures, the Director-approved C9A architecture plus its current timeout falsification as durable evidence, and the C10 falsification as durable gate evidence, but may not use a local capability until the recovered machine verifies that capability's realization. Tool-version/hash drift requires explicit revalidation; the bootstrap never silently substitutes a new binary or overwrites differing runtime files.
 
 Disposable recovery rehearsal on 2026-09-11 passed from a blank fake user profile: fresh Ryladmin/Project/Website clone topology, fail-closed runtime render, independent verification, live-ref discovery, and idempotent second apply all passed. The rehearsal caught and corrected a manifest rendering typo, a stale Codex hash, an unsafe Git-exit-code comparison, and an invalid requirement for untracked .ensemble-project-root.
 
-## Exact continuation - C10 blocked pending upstream capability trigger
+## Exact continuation - C9A realization blocked; C10 blocked pending upstream capability trigger
 
 Before acting in a fresh session, re-resolve live Ryladmin and Ensemble Project refs. Read Ryladmin `AGENTS.md`/`CURRENT_STATE.md`, then Project `AGENTS.md`, `CURRENT_STATE.md`, `docs/PROJECT_AUTHORITY.md`, `docs/PROJECT_EXECUTION_QUEUE.md`, `docs/AGENT_TOOLING_CAPABILITY_SNAPSHOT.md`, and `docs/blueprint/CODEX_ADMINISTRATOR_RUNTIME_SPECIFICATION.md`. Reconcile any newer Engineering/provider/validation state before relying on this snapshot.
 
-If the commissioned machine/runtime is lost, replaced, or materially differs from the recorded realization, complete `docs/ADMINISTRATOR_DISASTER_RECOVERY.md` and `recovery/verify-recovery.ps1` before Administrator execution. Durable C0-C9 gate history and the C10 falsification survive machine loss; replacement-machine capabilities do not.
+If the commissioned machine/runtime is lost, replaced, or materially differs from the recorded realization, complete `docs/ADMINISTRATOR_DISASTER_RECOVERY.md` and `recovery/verify-recovery.ps1` before Administrator execution. Durable C0-C9 gate history, the C9A amendment/current timeout falsification, and the C10 falsification survive machine loss; replacement-machine capabilities do not.
 
-There is currently **no earned successor Administrator gate**. C10 remains blocked/falsified on the tested `codex-cli 0.153.4` realization. Do not consume a live `0.154.0` C10 attempt: it is source-disqualified by unchanged relevant fail-open implementation. Preserve the C10 fixture and local evidence. First inspect a future exact Codex candidate's source/release; only if the fail-closed upstream-capability trigger is proven may a new exact realization be proposed for explicit Project/Director opening and the strengthened suite. C11 and Administrator Automations remain blocked throughout.
+There is currently **no earned successor live Administrator gate execution**. C9A remains the approved read-only orchestration architecture, but its current realization is uncommissioned after two bounded timeout failures. Do not retry either preserved C9A packet. A future C9A live attempt requires non-live diagnosis plus an explicit corrected-attempt decision carrying a materially changed hypothesis; C9 manual Claude review remains available in the meantime.
+
+C10 separately remains blocked/falsified on the tested `codex-cli 0.153.4` realization. Do not consume a live `0.154.0` C10 attempt: it is source-disqualified by unchanged relevant fail-open implementation. Preserve the C10 fixture and local evidence. First inspect a future exact Codex candidate's source/release; only if the fail-closed upstream-capability trigger is proven may a new exact realization be proposed for explicit Project/Director opening and the strengthened suite. C11 and Administrator Automations remain blocked throughout.
 
 Do not start provider traffic/spend, validation promotion, Design/ODR adjudication, danger-full-access, automatic merge, or automatic unique-branch deletion from this blocker. Preserve active Engineering work, unexplained unique refs, detached validation/evidence worktrees, and shared-Git serialization. Ryladmin records continuity only; live owning repositories remain authoritative.
