@@ -1,6 +1,6 @@
-# C9A R3 Project Opening Specification â€” 2026-09-12
+# C9A R3 Project Opening Specification — 2026-09-12
 
-Status: **ADMINISTRATOR DRAFT ONLY â€” NO PROJECT/DIRECTOR OPENING; NO LIVE R3 AUTHORITY**
+Status: **ADMINISTRATOR DRAFT ONLY — NO PROJECT/DIRECTOR OPENING; NO LIVE R3 AUTHORITY**
 
 This file is Ryladmin continuity/research only. It prepares the exact shape of a future `Rylascoo/Ensemble-Project` corrected-attempt decision and implementation candidate. It creates no Project authority, no C9A commissioning, no repository mutation authority outside Ryladmin, and no permission to invoke Claude under C9A.
 
