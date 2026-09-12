@@ -252,6 +252,13 @@ Base runtime remains fail-closed: read-only / on-request, no ambient command net
 
 The C7 connector-selection incident correction remains binding: edit Ryladmin only from an isolated local branch, audit the net diff, and explicitly load/use pull-request operations for PR creation/merge. Do not mutate Ryladmin `main` through generic connector file actions.
 
+## Supervised parallel production - 2026-09-12
+
+`docs/SUPERVISED_PARALLEL_PRODUCTION_BOARD.md` is the current Administrator dispatch board for deliberately using Codex and the commissioned C9 manual Claude review plane in parallel before C9A/C11 automation exists. It carries no owning-lane authority and must be fresh-resolved before every dispatch.
+
+At board construction, Project `main` remained `ba02d1689680d8492a4c52675e7aba91935fd2dd`, while the E0-B implementation branch had committed checkpoint `d1073fe2c76e2e05f2daac47465f86b48b456a9a` one commit ahead with no remote branch; concurrent Engineering then added one untracked implementation-audit document, so exact-SHA review must ignore local residue. Website authority advanced to `main@cc0f98430256f5788fc900c7373ae857ef260e66`: PERF-S1 is closed with F2 Source-Aligned Header as sole provisional neutral survivor, and the fresh Design serial `design/perf-s1-f2-incumbent-stage-comparison-2026-09-12` is open cleanly at exact `main`.
+
+The intended supervised concurrency is one writer in Engineering and one in Design, with separate fixed-packet Claude advisory reviews and Administrator architecture/falsification analysis. Manual Claude review remains C9 advisory use only; it does not commission C9A, satisfy C10, or unlock C11/Automations.
 ## Machine-loss recovery kit
 
 Ryladmin now carries the portable non-secret recovery surface:
