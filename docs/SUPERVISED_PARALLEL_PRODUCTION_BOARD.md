@@ -12,7 +12,7 @@ This board is a supervised dispatch surface, not an autonomous scheduler. Manual
 
 ## Reconciled operating snapshot
 
-- Ryladmin `main` at board creation: `b338f268104bf89357f5e00e7aac6a27e5b65e83`; latest merged continuity before this update: `8bfae4cc1c54d7c4fd0aabbcbe4011cb6790e17e`.
+- Ryladmin `main` at board creation: `b338f268104bf89357f5e00e7aac6a27e5b65e83`; latest merged continuity before this update: `a46ea1ebf179a5ce0e4e89146ef39d0067e1c1a6`.
 - Project `main`: `8901ea80089998fb6d4f15ac82057ba8f41becce` after E0-B implementation integration closeout; owning `CURRENT_STATE.md` keeps Q-E0B-01 ACTIVE with exact live-run activation next and provider traffic still blocked.
 - Engineering implementation and integration-closeout branches are retired from the remote. Exact native executable authority remains `d1073fe2c76e2e05f2daac47465f86b48b456a9a` under `validation/e0b-mixed-cast-implementation-native-arm64`; integrated evidence commit `625c82e6eb10f27b653c150eae7a02072d10eac0` remains archive-preserved. The owning next gate is construction of the exact E0-B live-run activation, not provider execution yet.
 - Website `main`: `cc0f98430256f5788fc900c7373ae857ef260e66`.

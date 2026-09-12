@@ -1,6 +1,6 @@
-# C9A R3 Project Opening Specification — 2026-09-12
+# C9A R3 Project Opening Specification â€” 2026-09-12
 
-Status: **ADMINISTRATOR DRAFT ONLY — NO PROJECT/DIRECTOR OPENING; NO LIVE R3 AUTHORITY**
+Status: **ADMINISTRATOR DRAFT ONLY â€” NO PROJECT/DIRECTOR OPENING; NO LIVE R3 AUTHORITY**
 
 This file is Ryladmin continuity/research only. It prepares the exact shape of a future `Rylascoo/Ensemble-Project` corrected-attempt decision and implementation candidate. It creates no Project authority, no C9A commissioning, no repository mutation authority outside Ryladmin, and no permission to invoke Claude under C9A.
 
@@ -23,6 +23,7 @@ R1/R2 packet-size and native-StructuredOutput hypotheses are already falsified. 
 R3 changes one primary runtime variable only: `--permission-mode plan` becomes `--permission-mode dontAsk`.
 
 The commissioned Claude realization remains frozen at Claude Code `2.1.267`, executable SHA-256 `0DC306259E3036AF4255F66B77451D3F7297BCD376BFAE20F7B42E2FA1473607`. Local CLI help explicitly lists `dontAsk` and `plan` as supported permission modes and states that `--permission-prompts none` automatically denies anything that would otherwise prompt.
+
 ## Candidate construction contract
 
 Use archived R2 candidate `58fedc8e54679804813d6780b31f4c034d0e9a2f` only as a source oracle. Do not resurrect or merge it. Reconcile its bounded implementation into the then-current Project tree.
