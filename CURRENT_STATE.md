@@ -14,7 +14,7 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 Current Project native validation authority remains exact checkout `bb869fb1c505603612bc718f739b3f1b358e5539` under tag `validation/e0a-gemini-technical-failure-diagnostic-classification-native-arm64` according to the live Project state.
 
-`Rylascoo/Ensemble-Website` was last reconciled at `main@9be487d6eb7e9e1bf5bc52668f20879a0e041cab` on 2026-09-12. STATE-S1 and its F4 incumbent comparison are closed without Stage promotion; no active serial Design branch exists. The exact Design next action is one bounded post-STATE-S1 Phase-C re-entry audit selecting the next single incumbent-refinement variable. This remains a Design snapshot only and creates no Engineering or Administrator visual authority.
+`Rylascoo/Ensemble-Website` was last reconciled at `main@86a11d3eb58bea81dddf4dc74233e58dcf7fc2e7` on 2026-09-12. The post-STATE-S1 re-entry result is promoted and archived, no serial branch is promoted as active authority, and **PERF-S1 — Stage Performance Attribution Coupling 01** is the selected next Phase-C refinement variable. The exact Design next action is the PERF-S1 deterministic method contract plus neutral attribution-coupling specimen matrix. A new work branch `design/perf-s1-method-matrix-2026-09-12` has been opened cleanly at this exact `main` but has no unique commit yet; treat it as concurrent Design work, not promoted authority. This remains a Design snapshot only and creates no Engineering or Administrator visual authority.
 
 ## Administrator gate status
 
@@ -194,6 +194,18 @@ All 48 former branches were given branch-specific annotated tags under `archive/
 Two clean obsolete E0-A branch worktrees (`q-e0a-03-gemini-standing-project-usage-2026-09-10` and `q-e0a-03-run02-analysis-key-policy-2026-09-10`) were removed after exact-head/archive verification, and four retired local branch refs were deleted. Detached validation/evidence worktrees remain intact. The normal Project root remains clean/detached at historical validation checkout `689655eed677b789ab3ee395f1c65b4f2cb72cc8`.
 
 Concurrent Engineering work was preserved: local worktree `e0b-mixed-cast-implementation-2026-09-12` remains the active Engineering WIP surface from Project `main@ba02d1689680d8492a4c52675e7aba91935fd2dd`; it became dirty during this Administrator audit and must not be cleaned, reset, repurposed, or interpreted as Administrator residue.
+
+### Website branch-census boundary - 2026-09-12
+
+A read-only Design-repository census, race-reconciled after re-entry serial closeout to `Rylascoo/Ensemble-Website main@86a11d3eb58bea81dddf4dc74233e58dcf7fc2e7`, found 92 remote heads: `main` plus 91 non-main refs. Design law is stricter than the Project cleanup rule: a serial branch may be mechanically retired only after archival-tag readback and a strict-ancestor / zero-unique condition; any branch with unique commits remains preserved until Design gives an explicit disposition.
+
+Six non-main refs are strict ancestors of current `main`, have zero unique commits, no local branch/worktree, and no tag at their exact heads: `design/fresh-chat-handoff-phase-b-packets-2026-09-10`, `design/clr01-defer-to-app-asset-convergence-2026-09-10`, `design/design-packet-synthesis-framework-2026-09-10`, `design/clr01-q19-diagnostic-repair-2026-09-10`, `design/clr01-q19-materialization-2026-09-10`, and `design/design-sol-agent-protocol-migration-2026-09-09`. These are Design-Sol lifecycle-closeout candidates only; Administrator did not tag or delete them.
+
+One new remote work branch, `design/perf-s1-method-matrix-2026-09-12`, equals current `main`, has a clean local worktree, and currently has zero unique commits; it matches the promoted next Design action and must be preserved as concurrent work even though it is not yet named as active authority. Eighty-four additional refs are divergent and therefore retain unique commits. Current promoted Design authority names only `design/sym02-threshold-k-shape-refinement-2026-09-11` among the 91 non-main branches; SYM-02 is explicitly preserved by `CURRENT_STATE.md` and the Design Ledger and is locally dirty. The remaining divergent refs are historical candidates for future Design disposition, not Administrator deletion. The just-closed `design/phase-c-post-state-s1-reentry-2026-09-12` remote ref is deleted and preserved by `archive/design/phase-c-post-state-s1-reentry-2026-09-12`; its local worktree still contains one untracked temporary reconciliation helper and remains Design-owned cleanup residue.
+
+No Website branch, tag, worktree, file, or Design authority surface was mutated by this census. Existing dirty/local Design worktrees remain lane-owned evidence/WIP and must not be cleaned, reset, repurposed, or inferred stale solely from age or branch naming.
+
+During this continuity closeout, a mistaken generic GitHub contents action created a `noop` file directly on Ryladmin `main` at `3ec93ca2e8587f0856bc2241e2cd3491efddbae0`. It was immediately removed by compensating commit `9233032845f906eff41f316d2acfbe925711dee1`; exact tree comparison against pre-incident `ff0f965096b225a4f0c0d2899dc4522eeeac7466` returned zero difference. No authority/content persisted. This reinforces the existing C7 rule: Ryladmin PR creation/merge must use explicit pull-request operations, never generic contents writes.
 
 Historical SurfSeven realization remains useful as a reproducibility checkpoint, not as replacement-machine authority:
 
