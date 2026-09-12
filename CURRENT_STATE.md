@@ -14,7 +14,7 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 Current Project native validation authority remains exact checkout `bb869fb1c505603612bc718f739b3f1b358e5539` under tag `validation/e0a-gemini-technical-failure-diagnostic-classification-native-arm64` according to the live Project state.
 
-`Rylascoo/Ensemble-Website` was last reconciled at `main@af7bfa545e075c2f4fdd9a3bcd31ea01280f8c45` on 2026-09-12. STATE-S1 is closed with **F4 - Balanced Dual-Channel Ladder** as the sole provisional neutral static state-salience survivor; the exact Design next action is a bounded exact-incumbent Stage comparison method. This remains a Design snapshot only and creates no Engineering or Administrator visual authority.
+`Rylascoo/Ensemble-Website` was last reconciled at `main@9be487d6eb7e9e1bf5bc52668f20879a0e041cab` on 2026-09-12. STATE-S1 and its F4 incumbent comparison are closed without Stage promotion; no active serial Design branch exists. The exact Design next action is one bounded post-STATE-S1 Phase-C re-entry audit selecting the next single incumbent-refinement variable. This remains a Design snapshot only and creates no Engineering or Administrator visual authority.
 
 ## Administrator gate status
 
@@ -184,6 +184,16 @@ The evolved Administrator config was preserved, not replaced by the generic disa
 The exact C10-evidence manifest remains SHA-256 `D19CD1333E0642960FED60D75BFDCF1BFCAAE1DD3AD2B7BC0C7FB6D6E2D743F9`. Its internal `files.config.toml` entry is an older commissioning census and does not equal the later post-C10 config hash above. Do **not** rewrite that historical manifest in place merely to make the internal census current: Project C10 evidence cites the exact manifest hash. If a future workflow needs a current runtime census, create and validate a versioned successor manifest rather than mutating the historical evidence object.
 
 Pre-repair runtime files are preserved locally at `C:\Users\Wiryl\.codex-ensemble\backups\runtime-drift-pre-recovery-20260912T060337Z`. A generic replacement-machine recovery render was separately preserved at `C:\Users\Wiryl\.codex-ensemble\backups\generic-recovery-render-before-correction-20260912T061050Z` after audit showed that adopting it on surviving SurfSeven would regress the evolved C4-C10 local realization. These local backups are non-authoritative troubleshooting evidence only.
+
+### Project ref/worktree hygiene closeout - 2026-09-12
+
+A fresh Project ref census at `main@ba02d1689680d8492a4c52675e7aba91935fd2dd` found 48 historical non-main remote heads. Twenty-six were already fully contained by `main`. Twenty-two were divergent historical central queue/current-state reconciliation refs; exact branch diffs showed no application source, and the only extra files on two temporary refs were one-off queue-reconciliation workflow/scripts. None of the 22 was referenced by current Project authority surfaces, and live Design authority had advanced beyond every represented Design queue transition.
+
+All 48 former branches were given branch-specific annotated tags under `archive/retired-2026-09-12/...` before their remote refs were deleted. Divergent unique commits remain losslessly preserved by those tags. Project remote heads therefore converged from 49 total heads to one `main` head at the closeout snapshot; no Project source/content commit was created by this cleanup. Shared-Git lock residue was zero.
+
+Two clean obsolete E0-A branch worktrees (`q-e0a-03-gemini-standing-project-usage-2026-09-10` and `q-e0a-03-run02-analysis-key-policy-2026-09-10`) were removed after exact-head/archive verification, and four retired local branch refs were deleted. Detached validation/evidence worktrees remain intact. The normal Project root remains clean/detached at historical validation checkout `689655eed677b789ab3ee395f1c65b4f2cb72cc8`.
+
+Concurrent Engineering work was preserved: local worktree `e0b-mixed-cast-implementation-2026-09-12` remains the active Engineering WIP surface from Project `main@ba02d1689680d8492a4c52675e7aba91935fd2dd`; it became dirty during this Administrator audit and must not be cleaned, reset, repurposed, or interpreted as Administrator residue.
 
 Historical SurfSeven realization remains useful as a reproducibility checkpoint, not as replacement-machine authority:
 
