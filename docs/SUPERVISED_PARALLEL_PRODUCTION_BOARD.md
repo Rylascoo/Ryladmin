@@ -12,9 +12,9 @@ This board is a supervised dispatch surface, not an autonomous scheduler. Manual
 
 ## Reconciled operating snapshot
 
-- Ryladmin live reconciliation before this continuity branch: `ce0125ff5b663b2a3d350d99b92205f98ae143ff`.
+- Ryladmin live reconciliation before this branch-retirement correction: `38863456e3b40ec7951eb6aa47b53aeb9ce9846d`.
 - Project `main`: `5a0709233c9f897584f8bff849c83db354ac45c1`. PR #101 repaired stale Run 01 continuity after activation integration and Validation #728; `CURRENT_STATE.md` now says Run 01 is READY FOR ONE EXECUTION and NOT YET CONSUMED.
-- Engineering has reserved exact Run 01 `E0B-Q01-MIX-20260912-01` against native executable `d1073fe2...`; current Project authority requires execution-time dated/provider/account revalidation, then exactly one reserved run if gates remain valid, with no probe/retry/replay/fallback. The merged PR #101 source branch `e0b-run01-fresh-chat-continuity-2026-09-12@138d9658...` remains live remotely pending owning-lane lifecycle cleanup.
+- Engineering has reserved exact Run 01 `E0B-Q01-MIX-20260912-01` against native executable `d1073fe2...`; current Project authority requires execution-time dated/provider/account revalidation, then exactly one reserved run if gates remain valid, with no probe/retry/replay/fallback. The merged PR #101 source branch is retired; fresh Project remote branch census resolves only `main`.
 - Website `main`: `1f0b696e7341a58642904b14969d2eb9f60596ee`.
 - No active Design serial remains. Current Design authority selects SEL-S1 - Stage Character Focus / Selection Hinge 01 as the exact next bounded method/matrix serial; it creates no new Stage cone, state-salience, identity, motion, product, or implementation authority.
 - Claude Code commissioned manual-review realization: `2.1.267`, dedicated `C:\Users\Wiryl\.claude-ensemble`, claude.ai first-party Pro subscription boundary.
