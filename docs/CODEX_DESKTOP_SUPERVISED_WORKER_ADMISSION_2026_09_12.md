@@ -1,6 +1,6 @@
 # Codex Desktop Supervised Worker Admission Audit — 2026-09-12
 
-Status: **SUPERVISED PILOT ELIGIBLE — NOT AN ADMINISTRATOR RUNTIME; NOT AUTOMATED; FIRST MUTATING PILOT NOT YET RUN**
+Status: **READ-ONLY PILOT PASS - MUTATING PILOT NOT YET RUN; NOT AN ADMINISTRATOR RUNTIME; NOT AUTOMATED**
 
 This record is Ryladmin continuity only. It does not create Engineering, Design, provider, validation, product, ODR, deployment, scheduling, or background-execution authority. It admits one new Director-operated execution surface for bounded supervised work after fresh owning-repository recovery.
 
@@ -69,3 +69,8 @@ Failure to meet any condition leaves desktop Codex available for read-only analy
 Native app-managed worktrees; agent-created commits or remote Git operations; multiple simultaneous mutating agents in one owning lane; browser/CDP or Computer Use; plugins/apps with external actions; Remote Control/cloud handoff; background Automations; provider credentials/traffic; or any use of desktop Codex as an Administrator/C9A/C10/C11 substitute each require their own explicit gate and evidence.
 
 The immediate value is therefore supervised subscription-backed production: the Administrator can prepare exact worktrees and packets while the Director uses the official desktop Codex app to consume available Codex capacity on real project work without weakening current repository or authority boundaries.
+
+
+## First read-only pilot result
+
+`PP-CODEX-DESKTOP-RO-01` passed the supervised read-only boundary. Durable audit: `docs/PP_CODEX_DESKTOP_RO_01_RESULT_2026_09_12.md`. The pass admits further read-only fixed-packet work only; mutating-worker admission still requires the separate isolated-worktree pilot above.
