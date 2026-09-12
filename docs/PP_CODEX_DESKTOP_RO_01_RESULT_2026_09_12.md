@@ -19,6 +19,7 @@ Manifest SHA-256: `F32C190215BD231609C583A49A7745A217D9D1EA62FA894986E034E79FEFD
 Frozen source set: 20 files, 186,621 source bytes. Post-run Administrator verification found all 20 files still byte/hash-identical to the manifest, no `.git` directory, and no extra files.
 
 Returned report SHA-256: `4C5C31418C7ACF1408F3BDBD3CB6EEC76A392301A56182ACFFA07EEBB5C8180A` (23,110 bytes as supplied back to the Administrator).
+
 ## Worker disposition
 
 Codex returned `READY_TO_DRAFT_ACTIVATION`, explicitly limited to drafting rather than provider execution.
@@ -39,6 +40,7 @@ The consequential technical claims were independently checked against the exact 
 - 15 RPM / 250,000 input TPM / 500 RPD route assumptions, conservative shared-project minimum pacing, and paid shadow rates encoded for 3.5 and 3.1;
 - pre-transcript blind scoring requirement and the separate exact live-run activation requirement;
 - `rateSnapshotVerifiedOn = "2026-09-12-pre-run-refresh-required"` and the 2026-09-14 fail-closed pricing/data-use freshness limit.
+
 One severity item is packet-limited rather than a live defect. Codex classified the absence of an exact E0-B run authorization as HIGH because the frozen packet omitted `docs/evidence/GEMINI_API_PROJECT_RELEVANCE_STANDING_DIRECTOR_AUTHORIZATION_2026_09_10.md`. Fresh live reconciliation shows that record remains ACTIVE and grants standing protected Gemini-key use for materially relevant already-authorized Free-tier project work, while preserving per-run exact identity, no-retry, synthetic-only, usage-ledger, and provider-policy boundaries. Project `CURRENT_STATE.md` still blocks E0-B provider traffic until the exact activation is durable. Therefore no new defect is created by the packet omission.
 
 Codex appropriately labeled missing material as unknown rather than inventing it. Its packet-limitations section is therefore evidence of useful epistemic discipline, not a failure.
@@ -61,4 +63,4 @@ This PASS admits further read-only desktop Codex packets under the same supervis
 
 ## Post-pilot live reconciliation
 
-Before this result was committed, Project main advanced to 52bd7a934d9d9d48ebf82741b4c495030a746cbc. Engineering independently performed the exact progression the worker identified as safe drafting work: reserved fresh Run 01/root, froze the blind scoring instrument, rechecked public route facts, preserved exact native executable authority, and stopped before provider traffic. The remaining live gate is protected authenticated AI Studio project/tier/quota/capacity evidence for both 3.5 and 3.1 routes, followed by durable exact preexecution activation. This convergence strengthens the assessment that the read-only worker output was project-relevant and correctly sequenced.
+Before this result was committed, Project `main` advanced to `52bd7a934d9d9d48ebf82741b4c495030a746cbc`. Engineering independently performed the exact progression the worker identified as safe drafting work: reserved fresh Run 01/root, froze the blind scoring instrument, rechecked public route facts, preserved exact native executable authority, and stopped before provider traffic. The remaining live gate is protected authenticated AI Studio project/tier/quota/capacity evidence for both 3.5 and 3.1 routes, followed by durable exact preexecution activation. This convergence strengthens the assessment that the read-only worker output was project-relevant and correctly sequenced.
