@@ -45,7 +45,7 @@ Re-resolve all relevant refs immediately before every dispatch. Any movement inv
 
 ## Recommended concurrency now
 
-Run PP-ENG-01 and PP-DES-01 as the only writing lanes. PP-ENG-CLAUDE-01A is terminal but incomplete and creates no correction obligation. Hold PP-DES-CLAUDE-01 until Design reaches a clean stable boundary. Spend additional read-only Claude capacity on PP-ADMIN-C9A-R3 architecture/falsification analysis or PP-XLANE-CLAUDE-01, both of which avoid racing the active writers.
+Run PP-ENG-01 and PP-DES-01 as the only writing lanes. PP-ENG-CLAUDE-01A is terminal but incomplete and creates no correction obligation. PP-DES-CLAUDE-01 is READY at the current clean Method-03 boundary but must be fresh-resolved immediately before dispatch. Additional read-only Claude capacity may go to PP-ADMIN-C9A-R3 architecture/falsification analysis or PP-XLANE-CLAUDE-01, both of which avoid racing the active writers.
 
 Do not add a second writer to either active lane merely to consume quota. Extra capacity should go to independent review, falsification, test-gap analysis, or future-work preparation.
 
