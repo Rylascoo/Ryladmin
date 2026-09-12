@@ -24,6 +24,20 @@ A fresh Administrator chat must:
 6. when the local runtime is absent, replaced, or materially drifted, run the disaster-recovery contract and verification kit before execution;
 7. continue the recorded gate only after reconciling stale snapshots.
 
+## Surviving-machine runtime drift
+
+The replacement-machine recovery kit is not a license to overwrite an evolved commissioned runtime on a surviving machine. When the original machine still exists but a local path/file/config appears drifted:
+
+1. preserve the exact observed runtime/config/manifest before changing anything;
+2. reconcile it against durable commissioning evidence and the exact historical manifest/hash before classifying the drift;
+3. distinguish a historical manifest snapshot from later authorized local config additions; a stale internal census is not by itself proof that the current runtime is permissive;
+4. prefer the smallest exact repair when the admitted bytes still exist (for example, recreating a missing manifest-selected executable path from a byte-identical binary with the same commissioned version/hash) rather than replacing the whole runtime;
+5. validate the evolved fail-closed semantics and the real Administrator launcher preflight after repair;
+6. use the generic `recovery/` render as replacement-machine reconstruction or as a disposable comparison oracle, not as an automatic in-place migration of a later commissioned SurfSeven realization; and
+7. when the canonical Project root is intentionally a detached historical validation checkout, use disposable fresh owning-repository clones for replacement-kit verification rather than moving or cleaning that historical root.
+
+Any exact repair that changes the commissioned binary/version/hash, weakens a safety control, reopens a failed gate, or changes project authority is outside this continuity rule and requires the separately governing revalidation/Director process.
+
 ## Update triggers
 
 Update Ryladmin `CURRENT_STATE.md` when any of these occurs:
