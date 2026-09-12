@@ -49,7 +49,7 @@ Re-resolve all relevant refs immediately before every dispatch. Any movement inv
 
 PP-ENG-01 and PP-DES-01 remain the only owning-lane writer slots. PP-CODEX-DESKTOP-RO-02 is the preferred next desktop-Codex read-only task and does not consume either writer slot. A mutating desktop pilot may proceed only by explicitly taking one owning lane's sole writer slot on an Administrator-created worktree. PP-ENG-CLAUDE-01A is terminal but incomplete. Hold PP-DES-CLAUDE-01 until Design completes the bounded Phase-C re-entry audit and freezes the next selected refinement boundary. Additional read-only Claude capacity may go to PP-ADMIN-C9A-R3 or PP-XLANE-CLAUDE-01.
 
-Do not add a second writer to either active lane merely to consume quota. Extra capacity should go to independent review, falsification, test-gap analysis, or future-work preparation.
+Do not add a second writer to either owning lane merely to consume quota. Extra capacity should go to independent review, falsification, test-gap analysis, or future-work preparation.
 
 ## Manual Claude review contract
 
