@@ -1,6 +1,6 @@
 # Ryladmin Current Administrator State
 
-Updated: 2026-09-12
+Updated: 2026-09-13
 
 ## Scope
 
@@ -10,7 +10,7 @@ If the commissioned machine/runtime is lost, read `docs/ADMINISTRATOR_DISASTER_R
 
 ## Last reconciled owning authority snapshots
 
-`Rylascoo/Ensemble-Project` is live at `main@4f084f6820dbdcf8d3a55ab76fc3c5e59a4fb6d2`. That owning closeout records PR #110 integration and exact-main Validation #748 and now claims Repeat 1 `E0C-Q01-REF-20260912-01` is ready for exactly one execution. It still uses the raced later `REF` preregistration and does not incorporate the Director-ratified fixed UTC batch-window law on Project Issue #107. The prior fresh machine census proved both `REF` evidence roots and all four deterministic claims absent, with no matching E0-C process and provider traffic zero at that census. Administrator therefore records `4f084f68...` as the owning repository fact but keeps E0-C execution fail-closed from Administrator continuity until Engineering durably reconciles #107; the new activation closeout does not supersede the later explicit Director timing-law decision.
+`Rylascoo/Ensemble-Project` is live at `main@1b0d68f7621790c9b610559ac32ca0c73e0ba988`. Owning Project authority now incorporates the Director-ratified fixed UTC batch-window law, restores the earlier `IDENT` preregistration as canonical, and classifies the later `REF` realization as raced/superseded for execution authority. Canonical slots are `E0C-Q01-IDENT-20260912-01` then `E0C-Q01-IDENT-20260912-02`; provider traffic remains zero and the exact UTC batch window is not yet frozen. The next owning Engineering action is one exact canonical Slot-1 activation with fresh authenticated project/key/tier/quota/capacity and protected-credential readiness, followed by exact-main post-merge Validation before any namespace claim/provider traffic. Administrator no longer carries the prior race hold as a conflicting continuity override.
 
 Current Project native validation authority remains exact checkout `d1073fe2c76e2e05f2daac47465f86b48b456a9a` under tag `validation/e0b-mixed-cast-implementation-native-arm64`, tag object `f7eadb838c4e01d9b4a01d17ff20b8d938046b03`, according to the live Project validation ledger.
 
@@ -26,7 +26,15 @@ C9A and C10 create no Engineering, provider, experiment, product, Design, ODR, s
 
 The Director has explicitly recentered Administrator work on the original unattended-operation objective: earn C10, then commission C11 selected Automations, then prove C12 recovery and C13 sustainable operation. Engineering owns E0-C and other experiment-lane repairs; Administrator involvement there is limited to bounded continuity/race protection and must not become continuous Engineering supervision.
 
-Current upstream inspection still fails the C10 eligibility trigger: OpenAI Codex issue #41979 remains open and current PreToolUse source still fails open for generic hook-process/serialization failures. A user-level ChatGPT condition watch now checks upstream once daily and reports only concrete eligibility evidence. That watch is convenience tooling only, not Project authority, not part of the commissioned runtime, and not C11. Ryladmin Issue #32 preserves this Director recentering as ephemeral continuity transport. Ryladmin Issue #33 preserves C11 preparation Candidate 01: the already-proven repository-native `authority-recovery` Skill as the presumptive first bounded read-only admission candidate after C10 passes; it is preparation only and is not enabled or scheduled as C11.
+Current upstream inspection still fails the C10 eligibility trigger: OpenAI Codex issue #41979 remains open and current PreToolUse source still fails open for generic hook-process/serialization failures. A user-level ChatGPT condition watch now checks upstream once daily and reports only concrete eligibility evidence. That watch is convenience tooling only, not Project authority, not part of the commissioned runtime, and not C11. The Director recentering and C11 preparation Candidate 01 are now durable repository continuity; Ryladmin Issues #32 and #33 are closed/completed transport. Candidate 01 remains the already-proven repository-native `authority-recovery` Skill, preparation only and not enabled or scheduled as C11.
+
+### Manual Manager -> Worker -> Reviewer Pilot 01 / current Codex realization
+
+The Director explicitly authorized one bounded manual Administrator Manager -> top-level Worker -> deterministic containment -> fresh read-only Administrator Reviewer -> next-task-candidate -> STOP pilot. Project Issue #112 is decision provenance/transport only; the pilot does not change `CURRENT_STATE.md`/queue authority in Project, does not create C10/C11 progress, and does not preempt E0-C.
+
+Pilot preflight discovered the previously pinned `codex-cli 0.153.4` executable was absent after a Codex update, so execution failed closed. Successor `codex-cli 0.154.0-alpha.6.2`, executable `C:\Users\Wiryl\AppData\Local\OpenAI\Codex\bin\98f7b459ac91593d\codex.exe`, SHA-256 `21AE7DF1EF034C6522DB6EFA2B127C0073FD33EDEA6FD6EC3063EF9AF1BB94EA`, was revalidated only for already-earned manual C4/C5 surfaces. Administrator write denial, Worker inside-worktree write/hash, Worker outside-worktree denial, shared-Git denial, clean restoration, and both official launcher preflights passed. The current local manifest SHA-256 is `927A40D22EB0704E6E52BE75549604E4E6C38B2B8FCC7CC8964F73AAC273DFA5`. Full continuity evidence: `docs/CODEX_0_154_0_ALPHA_6_2_C4_C5_SUCCESSOR_REVALIDATION_2026_09_13.md`.
+
+This successor acceptance does not test or imply C10 Hook fail-closed behavior. C10 remains BLOCKED/FALSIFIED and C11+ remain blocked. Pilot 01 subsequently executed on current Project `main@1b0d68f7621790c9b610559ac32ca0c73e0ba988`: Worker execution and deterministic containment PASS; the fresh read-only Reviewer remained contained but failed to return the required contract, and the 240-second supervisor failed to terminate the descendant Codex process tree. Pilot 01 is therefore terminally classified **PARTIAL PASS / REVIEWER SUPERVISION FALSIFIED**. Durable result: `docs/ADMINISTRATOR_MANAGER_WORKER_REVIEWER_PILOT01_RESULT_2026_09_13.md`. Do not rerun Issue #112. Any live successor test requires a new explicit Director opening and must first prove full process-tree timeout termination plus deterministic partial-output sealing.
 
 ## C9A read-only Claude orchestration - amendment and R1/R2 timeout falsification
 
