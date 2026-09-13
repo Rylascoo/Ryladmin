@@ -36,6 +36,12 @@ Pilot preflight discovered the previously pinned `codex-cli 0.153.4` executable 
 
 This successor acceptance does not test or imply C10 Hook fail-closed behavior. C10 remains BLOCKED/FALSIFIED and C11+ remain blocked. Pilot 01 subsequently executed on current Project `main@1b0d68f7621790c9b610559ac32ca0c73e0ba988`: Worker execution and deterministic containment PASS; the fresh read-only Reviewer remained contained but failed to return the required contract, and the 240-second supervisor failed to terminate the descendant Codex process tree. Pilot 01 is therefore terminally classified **PARTIAL PASS / REVIEWER SUPERVISION FALSIFIED**. Durable result: `docs/ADMINISTRATOR_MANAGER_WORKER_REVIEWER_PILOT01_RESULT_2026_09_13.md`. Do not rerun Issue #112. Any live successor test requires a new explicit Director opening and must first prove full process-tree timeout termination plus deterministic partial-output sealing.
 
+### PP-ADMIN-MWR-02 process-supervision preparation
+
+The deterministic non-Codex successor preparation now passes. A Windows Job Object realization was recursively falsified and corrected until kernel query confirmed `JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE` as `0x2000`; normal-completion, explicit-timeout parent/child/grandchild termination, forced-supervisor-death termination, deterministic partial stdout/stderr sealing, known-PID checks, and broad fixture-process census all pass. The sealed crash evidence SHA-256 is `D4F28400603129C4CFD8C3C42B285EEDD3994AB4F8577B3AE531E6890737F68F`. Durable record: `docs/ADMINISTRATOR_MWR02_PROCESS_SUPERVISION_PREPARATION_2026_09_13.md`.
+
+This is preparation evidence only, not live Codex Reviewer commissioning. PP-ADMIN-MWR-01 remains falsified for live Reviewer supervision. No Reviewer retry, unattended loop, C10/C11 progress, or self-triggering continuation is authorized. A future live Reviewer verification requires a new explicit Director opening and must use the exact fail-closed process-tree supervisor contract before any second Worker -> Reviewer chain is attempted.
+
 ## C9A read-only Claude orchestration - amendment and R1/R2 timeout falsification
 
 The Director-approved Project amendment decouples a strictly repository-read-only, on-demand Claude advisory dispatcher from C10. The amendment was integrated on Project main before the pilot and remains valid. It does not reinterpret C10, enable C11, admit scheduling/background behavior, or permit mutation/authority/provider side effects.
