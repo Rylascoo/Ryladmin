@@ -1,6 +1,6 @@
 # E0-B Run 01 Terminal Discovery — 2026-09-12
 
-Status: **ADMINISTRATOR-VERIFIED LOCAL TERMINAL EVIDENCE — OWNING PROJECT CLOSEOUT PENDING**
+Status: **E0-B CLOSED UNDER DIRECTOR OPTION A — Q-E0C-01 NON-PROVIDER PREPARATION ACTIVE**
 
 This file is Ryladmin continuity only. It does not create Engineering, experiment, provider, scoring, successor-phase, or retry authority. `Rylascoo/Ensemble-Project` remains the owning authority.
 
@@ -12,7 +12,7 @@ Administrator read-only census after Project `main@5a0709233c9f897584f8bff849c83
 
 The local validator remains exact executable checkout `d1073fe2c76e2e05f2daac47465f86b48b456a9a`. No matching RunId/validator execution process remained active at census time.
 
-Current Project `CURRENT_STATE.md` still says Run 01 is ready and unconsumed. That owning volatile state is therefore stale relative to the verified local terminal evidence and must be reconciled by Engineering/Evidence rather than silently rewritten by Administrator.
+Project PR #104 integrated this terminal evidence and moved Q-E0B-01 to the Director-disposition gate. PR #105 then durably implemented Director Option A at `main@61516baff6af5c2b6d33223e89543fcbd6bb78d2`: Q-E0B-01 is DONE, and Q-E0C-01 is ACTIVE for bounded non-provider preparation only. No E0-C run or provider authority follows from this record.
 
 ## Terminal seal
 
@@ -55,15 +55,15 @@ Key fingerprints:
 
 ## Authority consequence
 
-Project authority at `main@5a070923...` says any namespace claim consumes the reserved run, no probe/retry/replay/fallback is authorized, every terminal outcome must be preserved/sealed/audited/ledgered, and only a 12/12 contributing run with complete seal + hard-gate PASS may enter blind scoring.
+Project authority at `main@61516baf...` closes E0-B on this preserved consumed/noncontributing result under Director Option A, retains the no-retry/replay/fallback/replacement/partial-scoring law, and advances only to Q-E0C-01 non-provider method/preregistration preparation. E0-C provider traffic remains separately unauthorized.
 
 Administrator therefore treats the following as mechanically established for continuity:
 
 1. the reserved Run 01 namespace is consumed;
 2. the observed run is terminal and noncontributing for the 12/12 scoring gate;
 3. the same RunId may not be retried, replayed, replaced, or routed through a fallback by Administrator;
-4. the exact owning Q-E0B-01 closure/falsification/successor classification remains pending Project Engineering/Evidence reconciliation.
+4. owning Project authority now records Q-E0B-01 DONE under Option A and Q-E0C-01 ACTIVE for non-provider preparation only; no E0-C run is authorized.
 
-Ephemeral Project transport `Rylascoo/Ensemble-Project#103` carries the terminal audit/closeout request. Existing R3 transport `#100` was updated so its remaining R3 decision evaluation must fresh-recover after the Q-E0B-01 terminal state is reconciled.
+Ephemeral Project transport `Rylascoo/Ensemble-Project#103` is closed completed after PR #105 made Director Option A durable and its source branch lifecycle was retired. Existing R3 transport `#100` does not inherit authority from E0-B closure: Q-ADMIN-02 remains blocked, and Q-E0C-01 is now the active Engineering preparation boundary.
 
 No R3/C9A/C10/C11 authority follows from this terminal evidence.
