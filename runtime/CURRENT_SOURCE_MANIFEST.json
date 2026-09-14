@@ -1,0 +1,76 @@
+{
+    "schema":  "ryladmin.administrator-runtime-source.v1",
+    "status":  "CURRENT_COMMISSIONED_SOURCE",
+    "project_policy_ref":  "dc248cdf921d31b300a5c201d0bee2ca741755e0",
+    "codex":  {
+                  "version_output":  "codex-cli 0.154.0-alpha.6.2",
+                  "sha256":  "21AE7DF1EF034C6522DB6EFA2B127C0073FD33EDEA6FD6EC3063EF9AF1BB94EA"
+              },
+    "files":  {
+                  "AGENTS.md":  {
+                                    "sha256":  "E4D233EAC873CCF2D15A4EF81317673FA7EBB9FD1893861E4161052B7BFA82E5",
+                                    "bytes":  1505
+                                },
+                  "config.toml":  {
+                                      "sha256":  "5AD9714B4E2D07FEC4520DB65BB7AEDF5907AE2719BE80CEF307984F15E2C43B",
+                                      "bytes":  1986
+                                  },
+                  "administrator.config.toml":  {
+                                                    "sha256":  "4DA1696D4C0371593565E656E7C0423B4BC7031A9762A84DE709DE6CB582C8F2",
+                                                    "bytes":  128
+                                                },
+                  "worker.config.toml":  {
+                                             "sha256":  "340907F398FA5A20E3853D34679A6C1F679084189FD4175EF0D3B89EC3F8BDFC",
+                                             "bytes":  1279
+                                         },
+                  "agents/reviewer.toml":  {
+                                               "sha256":  "6AB29BC4F5BA55EC7B5B996DDFC49A05B9D436809CF89EB68CD58B7BD13B9C40",
+                                               "bytes":  510
+                                           },
+                  "agents/scout.toml":  {
+                                            "sha256":  "7E072EA63A29F7F09226660A7E110F428060DBB88ACC58030E85953D823892A4",
+                                            "bytes":  484
+                                        },
+                  "agents/worker.toml":  {
+                                             "sha256":  "6533B67957999F71384D25A34993D0A422E63720363D329615742203FF7B0DC3",
+                                             "bytes":  573
+                                         },
+                  "bin/ensemble-admin.ps1":  {
+                                                 "sha256":  "5B46A520EEB822A8E9CC9D0E435FD3BC61D594AAD5B0BB49DB691F2C8173A1FC",
+                                                 "bytes":  5660
+                                             },
+                  "bin/ensemble-worker.ps1":  {
+                                                  "sha256":  "B1F1EE5D5C55F06BD73B3D2DF9D7E3E36170BFD012CB5E11B7C26F36E139093A",
+                                                  "bytes":  5668
+                                              },
+                  "bin/ensemble-git-lock.ps1":  {
+                                                    "sha256":  "A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830",
+                                                    "bytes":  3076
+                                                },
+                  "bin/ensemble-reviewer-child.ps1":  {
+                                                          "sha256":  "8EF97B1268ABBFBBA782642B27EE20B2B8EB0793A64980D921C80BD421E0E0DE",
+                                                          "bytes":  518
+                                                      },
+                  "bin/ensemble-reviewer-supervisor.ps1":  {
+                                                               "sha256":  "6C21CE7645E244E4A4127FF1853F904F533FCF1FBCEBFF537ACA4F53AA8A524A",
+                                                               "bytes":  17409
+                                                           },
+                  "state/runtime-manifest.json":  {
+                                                      "sha256":  "5653FFA4BC9A1DEDC1055CC255532126A6E4054290F78A811152A6830AF96C00",
+                                                      "bytes":  9232
+                                                  }
+              },
+    "excluded_from_repository":  [
+                                     "auth.json",
+                                     "*.sqlite",
+                                     "sessions/",
+                                     "scratch/",
+                                     "browser/",
+                                     "plugins/",
+                                     ".sandbox/",
+                                     ".sandbox-secrets/",
+                                     "installation_id",
+                                     "credentials/tokens/keys"
+                                 ],
+    "notice":  "Exact non-secret SurfSeven commissioned runtime source snapshot. Project policy remains superior; replacement-machine realization requires revalidation."
+}

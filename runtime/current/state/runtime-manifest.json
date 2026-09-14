@@ -1,0 +1,166 @@
+{
+    "schema_version": 2,
+    "runtime_spec": {
+        "repository": "Rylascoo/Ensemble-Project",
+        "path": "docs/blueprint/CODEX_ADMINISTRATOR_RUNTIME_SPECIFICATION.md",
+        "tag": "commissioning/codex-administrator-c0-baseline",
+        "content_commit": "6378081101788a8ea45f1631ee7ed8a2588a235f",
+        "accepted_main_merge": "63afcfc243cca76bc0486f40020749a73c51af4b"
+    },
+    "codex": {
+        "executable": "C:\\Users\\Wiryl\\AppData\\Local\\OpenAI\\Codex\\bin\\98f7b459ac91593d\\codex.exe",
+        "version_output": "codex-cli 0.154.0-alpha.6.2",
+        "sha256": "21AE7DF1EF034C6522DB6EFA2B127C0073FD33EDEA6FD6EC3063EF9AF1BB94EA",
+        "pin_reason": "0.153.4 disappeared after Codex update; 0.154.0-alpha.6.2 revalidated 2026-09-13 for already-earned C4/C5 manual Administrator/Worker surfaces before Pilot 01. This does not reopen/pass C10 or enable C11.",
+        "provenance_note": "OpenAI OpCo, LLC Windows signature Valid. Revalidation: Administrator apply_patch write denied; Worker inside-worktree write/hash PASS; Worker outside-worktree and shared-Git writes denied; no provider/repository authority created. Current config hash reconciled after successor permission revalidation; retained C10 trusted-hook residue is inert because normal features.hooks=false and matches durable C10 evidence."
+    },
+    "model_mapping": {
+        "verified_catalog_utc": "2026-09-10T05:15:30.2408851Z",
+        "catalog": [
+            "gpt-6-astra",
+            "gpt-reserve",
+            "gpt-5.6-sol",
+            "gpt-5.6-terra",
+            "gpt-5.6-luna",
+            "gpt-5.5",
+            "codex-auto-review"
+        ],
+        "M0": "deterministic script / no model",
+        "M1": "not yet qualified at C0; Scout remains gpt-5.6-sol/medium until a bounded cheaper-model qualification passes",
+        "M2": {
+            "model": "gpt-5.6-sol",
+            "administrator_reasoning": "medium",
+            "worker_reasoning": "high",
+            "reviewer_reasoning": "high"
+        },
+        "M3": {
+            "model": "gpt-6-astra",
+            "status": "scarce escalation only; not a routine default"
+        }
+    },
+    "authentication": {
+        "method": "chatgpt",
+        "status": "confirmed",
+        "stored_api_key": false,
+        "stored_chatgpt_tokens": true,
+        "provider_credentials_present": false,
+        "auth_file_hash_recorded": false
+    },
+    "tooling": {
+        "mcp_servers": 0,
+        "marketplace_plugins": 9,
+        "rg": {
+            "status": "not available",
+            "disposition": "not admitted at C0; Git/Python provide deterministic alternatives for current gates"
+        },
+        "defender": {
+            "status": "endpoint protection detected; exclusions unverified",
+            "disposition": "no exclusion added because no actual interference is evidenced"
+        },
+        "remote_desktop_scope_plan": {
+            "status": "confirmed",
+            "allowlist": [
+                "C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Project",
+                "C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Project-Worktrees",
+                "C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Project-Evidence",
+                "C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Website",
+                "C:\\Users\\Wiryl\\Sol Dev\\Ensemble-Website-Worktrees",
+                "C:\\Users\\Wiryl\\.codex-ensemble"
+            ],
+            "umbrella_sol_dev_permanent_grant": false,
+            "personal_codex_access": "C0 comparison/migration only; no longer required after dedicated runtime establishment"
+        },
+        "remote_plugin_catalog": "disabled by Administrator config; installed connector invocation is separately allowlisted",
+        "github_authority_connector": {
+            "status": "admitted read-only",
+            "connector_id": "connector_76869538009648d5b282a4bb21c3d157",
+            "default_tools_enabled": false,
+            "enabled_tools": [
+                "fetch"
+            ],
+            "open_world_enabled": false,
+            "destructive_enabled": false
+        },
+        "verified_worktree_selection": true,
+        "python_runtime": {
+            "executable": "C:\\Users\\Wiryl\\.codex-ensemble\\toolchains\\python312-arm64\\python.exe",
+            "version_output": "Python 3.12.10",
+            "sha256": "7F1EBBBB04164CAF8F8073AAFA7F82321FB44695E10FE6A9EBAF2138B63892C4",
+            "admission": "C3 deterministic Skills; Administrator-owned private Python copy exposed only as ENSEMBLE_PYTHON without broad PATH inheritance",
+            "permission_profile": "ensemble-admin-readonly extends :read-only; read-only grant limited to C:/Users/Wiryl/.codex-ensemble/toolchains/python312-arm64; NTFS grants CodexSandboxUsers RX only"
+        },
+        "worker_execution": {
+            "status": "commissioned at C4 - separate top-level Worker context",
+            "mechanism": "separate top-level Codex execution because native subagents inherit Administrator read-only sandbox",
+            "permission_profile": "ensemble-worker-workspace extends :workspace; root denied; minimal/toolchain read; active workspace writable; command network disabled",
+            "approval_policy": "never for noninteractive Worker execution; out-of-sandbox escalation fails closed",
+            "apps": "disabled",
+            "multi_agent": false,
+            "exact_worktree_required": true,
+            "expected_head_required": true,
+            "clean_branch_required": true,
+            "shared_git_mutation": "prohibited",
+            "provider_execution": "prohibited"
+        },
+        "shared_git_lock": {
+            "status": "commissioned at C5",
+            "helper": "C:\\Users\\Wiryl\\.codex-ensemble\\bin\\ensemble-git-lock.ps1",
+            "sha256": "A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830",
+            "scope": "per Git common directory",
+            "acquisition": "atomic FileMode.CreateNew; no wait",
+            "contention": "exit 75; preserve existing lock; do not disclose lock contents",
+            "release": "remove only byte-identical lock owned by acquiring process",
+            "applies_to": [
+                "fetch",
+                "worktree lifecycle",
+                "ref/tag mutation",
+                "push",
+                "branch deletion"
+            ],
+            "dispatch_id_required": true,
+            "validated": {
+                "contention_exit": 75,
+                "preexisting_lock_preserved": true,
+                "lock_content_not_disclosed": true,
+                "normal_release_zero_residue": true
+            }
+        },
+        "git_lifecycle": {
+            "status": "commissioned at C5",
+            "pilot_branch": "q-admin-02-c5-lifecycle-pilot-2026-09-10",
+            "pilot_commit": "e259d6916b9c9b91b96eb2c8922e0c9ff9ced669",
+            "push_validation_run": 610,
+            "pr": 62,
+            "pr_validation_run": 611,
+            "merge_commit": "5cd64307471a4095d71e5e4467386b866004e375",
+            "post_merge_validation_run": 612,
+            "archive_tag": "archive/q-admin-02-c5-lifecycle-pilot-2026-09-10",
+            "archive_tag_object": "a240016bec3456d7e7c3fa9237d1aed10c6543a9",
+            "direct_main_push": false,
+            "temporary_branch_and_worktree_retired": true
+        },
+        "supervised_reviewer": {
+            "status": "commissioned manual workflow tooling",
+            "supervisor": "C:\\Users\\Wiryl\\.codex-ensemble\\bin\\ensemble-reviewer-supervisor.ps1",
+            "child": "C:\\Users\\Wiryl\\.codex-ensemble\\bin\\ensemble-reviewer-child.ps1",
+            "mode": "fresh top-level read-only Administrator Reviewer under Windows Job Object supervision",
+            "automation": "not admitted; outer Administrator must dispatch and reconcile each cycle",
+            "timeout_semantics": "contained timeout is terminal non-success; no automatic retry or continuation"
+        }
+    },
+    "last_census_utc": "2026-09-13T22:01:18.268287Z",
+    "files": {
+        "config.toml": "5AD9714B4E2D07FEC4520DB65BB7AEDF5907AE2719BE80CEF307984F15E2C43B",
+        "administrator.config.toml": "4DA1696D4C0371593565E656E7C0423B4BC7031A9762A84DE709DE6CB582C8F2",
+        "AGENTS.md": "E4D233EAC873CCF2D15A4EF81317673FA7EBB9FD1893861E4161052B7BFA82E5",
+        "agents/scout.toml": "7E072EA63A29F7F09226660A7E110F428060DBB88ACC58030E85953D823892A4",
+        "agents/worker.toml": "6533B67957999F71384D25A34993D0A422E63720363D329615742203FF7B0DC3",
+        "agents/reviewer.toml": "6AB29BC4F5BA55EC7B5B996DDFC49A05B9D436809CF89EB68CD58B7BD13B9C40",
+        "bin/ensemble-admin.ps1": "5B46A520EEB822A8E9CC9D0E435FD3BC61D594AAD5B0BB49DB691F2C8173A1FC",
+        "worker.config.toml": "340907F398FA5A20E3853D34679A6C1F679084189FD4175EF0D3B89EC3F8BDFC",
+        "bin/ensemble-worker.ps1": "B1F1EE5D5C55F06BD73B3D2DF9D7E3E36170BFD012CB5E11B7C26F36E139093A",
+        "bin/ensemble-git-lock.ps1": "A8550C6234D0C5F8721AB2224DAE36043C7E649077BD73A2A16F765547C55830",
+        "bin/ensemble-reviewer-child.ps1": "8EF97B1268ABBFBBA782642B27EE20B2B8EB0793A64980D921C80BD421E0E0DE",
+        "bin/ensemble-reviewer-supervisor.ps1": "6C21CE7645E244E4A4127FF1853F904F533FCF1FBCEBFF537ACA4F53AA8A524A"
+    }
+}

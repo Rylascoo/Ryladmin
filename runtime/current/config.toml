@@ -1,0 +1,79 @@
+forced_login_method = "chatgpt"
+approval_policy = "on-request"
+approvals_reviewer = "user"
+default_permissions = "ensemble-admin-readonly"
+allow_login_shell = false
+web_search = "disabled"
+
+[permissions.ensemble-admin-readonly]
+extends = ":read-only"
+description = "Ensemble Administrator read-only plus pinned Python runtime"
+
+[permissions.ensemble-admin-readonly.filesystem]
+"C:/Users/Wiryl/.codex-ensemble/toolchains/python312-arm64" = "read"
+
+[history]
+persistence = "save-all"
+
+[shell_environment_policy]
+inherit = "core"
+ignore_default_excludes = false
+experimental_use_profile = false
+
+[memories]
+generate_memories = false
+use_memories = false
+
+[apps._default]
+enabled = false
+open_world_enabled = false
+destructive_enabled = false
+
+[apps.connector_76869538009648d5b282a4bb21c3d157]
+enabled = true
+default_tools_enabled = false
+open_world_enabled = false
+destructive_enabled = false
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.fetch]
+enabled = true
+approval_mode = "auto"
+
+[agents]
+enabled = false
+max_concurrent_threads_per_session = 1
+
+[windows]
+sandbox = "elevated"
+
+[features]
+remote_plugin = false
+memories = false
+hooks = false
+browser_use = false
+browser_use_external = false
+browser_use_full_cdp_access = false
+computer_use = false
+multi_agent = false
+goals = false
+
+[projects.'c:\users\wiryl\sol dev\ensemble-project']
+trust_level = "trusted"
+
+[hooks.state]
+
+[hooks.state.'C:\Users\Wiryl\.codex-ensemble\hooks.json:pre_tool_use:0:0']
+trusted_hash = "sha256:96ca6c600481fd14fa68f44f76e7de5e86d6a17c305c514e75bf780363fc3d72"
+[permissions.ensemble-worker-workspace]
+extends = ":workspace"
+description = "Ensemble top-level Worker: exact workspace write, shared Git protected, command network off"
+
+[permissions.ensemble-worker-workspace.filesystem]
+":root" = "deny"
+":minimal" = "read"
+":tmpdir" = "deny"
+":slash_tmp" = "deny"
+"C:/Users/Wiryl/.codex-ensemble/toolchains/python312-arm64" = "read"
+
+[permissions.ensemble-worker-workspace.network]
+enabled = false
