@@ -17,11 +17,11 @@ This packet exists so a fresh Administrator chat can recover the exact continuat
 
 ## Last reconciled repository snapshots
 
-- Project: `Rylascoo/Ensemble-Project main@e8b702a5b37d208d7caeeb6ffeb5a6beacf24f85`; E0-D ACTIVE; P01 Slot 1 activation integrated and exact-main Validation #855 green; namespace unconsumed; provider traffic zero.
+- Project: `Rylascoo/Ensemble-Project main@cfa0ec95aa3ea588269135b3160ce008f523fd27`; E0-D ACTIVE; PR #148 integrated the P01 provider-association rotation and push-triggered exact-main Validation #859 passed; namespace unconsumed; provider traffic zero.
 - Ryladmin handoff integration base after compensated no-content incident: `main@93a68aec6f25bc2f14d7f24c4ee4e532efbe97b2`; fresh-resolve live `main` after this packet is integrated. Pre-incident `db805b4a7d75045fb98c550b72e39c7aa8f2dd44` is tree-identical to the compensated base.
 - Website publication: `Rylascoo/Ensemble-Website main@4bb91292171e0d503d3a4e058ee421436221a793`.
-- Active Design stream: `design/appui01-working-compositions-2026-09-14@275d0063e9af5876854469a51be4583435f3ddad`; Phase 1 frozen PASS; four Phase-2 studies PASS through Present-Character Density Stress; next is the static Stage-specific unavailable / interrupted / recovery presentation exception study.
-- Website Issue #69 remains open because active Design `CURRENT_STATE.md` still carries stale Engineering `main@60b85fb...`; this is Design-owned reconciliation and must not be silently repaired by Administrator authority.
+- Active Design stream: `design/appui01-working-compositions-2026-09-14@51d06a7ac5cf243b41c16c60dc6f9e2cfd788288`; Phase 1 frozen PASS; eight bounded Phase-2 static studies PASS through Nonverbal Action / Refusal; next is the consolidated Phase-2 static closeout audit, then fresh Engineering reconciliation before any bounded Phase-3 entry/hold decision.
+- Website Issue #69 remains open. Active Design `CURRENT_STATE.md` now carries Engineering `main@e8b702a5b37d208d7caeeb6ffeb5a6beacf24f85`, which is stale relative to Project `main@cfa0ec95aa3ea588269135b3160ce008f523fd27`; this remains Design-owned reconciliation and must not be silently repaired by Administrator authority.
 
 ## Exact P01 Slot 1 identity
 
@@ -47,18 +47,24 @@ Frozen runtime identity:
 
 Do not substitute the local raw fixture-file byte hash for the frozen canonical semantic/provenance fixture hash. The renewed native authority and fixture smoke are the governing identity evidence.
 
+## P01 provider-association rotation
+
+Director amendment: `Rylascoo/Ensemble-Project/docs/evidence/E0D_P01_SLOT1_PROVIDER_ASSOCIATION_ROTATION_DIRECTOR_AMENDMENT_2026_09_15.md`. It supersedes only the prior P01 authenticated project/key association. The amended association is project `Ensemble Testing`, project ID `gen-lang-client-0793779417`, credential label `Gemini API Key`, Free tier. The Director-supplied AI Studio screenshot is provenance-hashed in Project evidence; neither the screenshot nor the secret is stored in Ryladmin.
+
+The fresh secret was not supplied to ChatGPT and is **not yet locally rebound** in this handoff state. The old protected `gemini-test-key.dpapi` / ready-marker pair must not be treated as readiness for the amended P01 association or injected into P01. Before launch, bind the new secret locally through the established CurrentUser-protected mechanism without printing, logging, hashing, exporting, committing or placing plaintext in command arguments. This protected rebinding/readiness check is non-provider preparation and may occur before the frozen window; it must not send a Gemini request or create a claim/evidence root.
+
 ## Last non-consuming SurfSeven census
 
 Last completed census: `2026-09-15T16:53:53.3265442Z`.
 
-- Project `origin/main`: `e8b702a5b37d208d7caeeb6ffeb5a6beacf24f85`;
+- Project `origin/main` at this historical census: `e8b702a5b37d208d7caeeb6ffeb5a6beacf24f85`; this predates PR #148 and must not be used as current authority;
 - reserved evidence root: absent;
 - deterministic run claim: absent;
 - deterministic root claim: absent;
 - matching `Ensemble.E0.Harness.exe` process count: `0`;
 - ambient `GEMINI_API_KEY`: absent;
-- protected `gemini-test-key.dpapi`: present outside Git;
-- protected `gemini-test-key.ready`: present outside Git;
+- old protected `gemini-test-key.dpapi`: present outside Git at census time, but superseded for P01 after the provider-association rotation;
+- old protected `gemini-test-key.ready`: present outside Git at census time, but not evidence that the new P01 credential is installed;
 - retained validator HEAD: exact `0dacdbf6bd5453c192568cd4718207e145dfcf40`;
 - retained validator dirty count: `0`;
 - Harness executable SHA-256: exact `b2f9c45b376ef08b8c4ec0c7b56c4f595b1d7377ebdb858b63eb555e3cf28625`;
@@ -68,7 +74,7 @@ The currently observed online SurfSeven connector binding on 2026-09-15 was devi
 
 ## Launch-boundary gates
 
-Immediately before claim creation, all of the following must be true simultaneously: current Project authority still authorizes this exact Slot 1; current UTC is inside the immutable P01 window; authenticated Google AI Studio confirms `Gemini Project - Kymaean` / project ID `gen-lang-client-0490221700`, `Gemini API Key - testing`, Free tier, the exact `Gemini 3.5 Flash Lite` row, and sufficient current RPM/TPM/RPD capacity; protected local credential artifacts remain ready without disclosure; the validator/tag/executable/fixture/profile identities remain exact; evidence root and both claims remain absent; no matching Harness process exists; and there is no material contrary lifecycle, pricing, data-use, reasoning-control, account, project, key, quota, model, or route signal.
+Immediately before claim creation, all of the following must be true simultaneously: current Project authority still authorizes this exact Slot 1; current UTC is inside the immutable P01 window; authenticated Google AI Studio confirms `Ensemble Testing` / project ID `gen-lang-client-0793779417`, credential label `Gemini API Key`, Free tier, the exact `Gemini 3.5 Flash Lite` row, and sufficient current RPM/TPM/RPD capacity; the newly rebound CurrentUser-protected credential is ready without disclosure and the old protected credential is not selected; the validator/tag/executable/fixture/profile identities remain exact; evidence root and both claims remain absent; no matching Harness process exists; and there is no material contrary lifecycle, pricing, data-use, reasoning-control, account, project, key, quota, model, or route signal.
 
 Any failed or indeterminate gate is a hard stop before namespace claim, evidence-root creation, credential injection, or provider traffic. Do not use a standalone Gemini API compatibility/key/quota probe. The run's own `countTokens` and generation calls are authorized only inside the exact single execution after every preclaim gate passes.
 
@@ -78,7 +84,7 @@ Only after every launch-boundary gate passes:
 
 `Ensemble.E0.Harness.exe e0d-run E0D-FULL-REFERENCE-01 <canonical-missing-raft-fixture.json> E0D-Q01-P01-FULL-20260914-01 <exact-evidence-root> 0dacdbf6bd5453c192568cd4718207e145dfcf40`
 
-Credential material may be decrypted only in memory and injected only into the intended child-process environment through the established protected CurrentUser mechanism. Never print, hash, persist, export, place in command arguments, or copy plaintext credential material into logs, repository evidence, chat, or generated artifacts.
+Only the newly rebound P01 credential may be decrypted in memory and injected into the intended child-process environment through the established protected CurrentUser mechanism; the superseded old protected credential may not be used for P01. Never print, hash, persist, export, place in command arguments, or copy plaintext credential material into logs, repository evidence, chat, or generated artifacts.
 
 The first deterministic claim/evidence-root creation consumes Slot 1 regardless of terminal outcome. There is no retry, replay, replacement, fallback, paid/Priority route, model/profile/fixture substitution, window move, or retune authority. A technical/provider/timeout/refusal/invalid-output/budget/cancellation terminal consumes the slot and must be sealed and reconciled as terminal evidence.
 
@@ -92,4 +98,4 @@ Do not modify Website/Design authority to make it match this packet. The active 
 
 ## Minimal fresh-chat resume instruction
 
-`Resume the Ensemble / Kymaean Project Administrator from live Rylascoo/Ryladmin authority. Fresh-resolve live refs and read AGENTS.md, CURRENT_STATE.md, and docs/ADMINISTRATOR_FRESH_CHAT_HANDOFF_E0D_P01_SLOT1_2026_09_15.md. Recover exact Project authority rather than trusting the handoff snapshot. Continue only the E0-D P01 Slot 1 boundary: if before the frozen window, stop before execution-sensitive provider work; if inside it, perform the fresh SurfSeven census, immediately preclaim authenticated AI Studio capacity gate, frozen interlock check, and exactly one authorized run if all gates pass. Do not activate Slot 2 or later work without separate authority.`
+`Resume the Ensemble / Kymaean Project Administrator from live Rylascoo/Ryladmin authority. Fresh-resolve live refs and read AGENTS.md, CURRENT_STATE.md, and docs/ADMINISTRATOR_FRESH_CHAT_HANDOFF_E0D_P01_SLOT1_2026_09_15.md. Recover exact Project authority rather than trusting the handoff snapshot. Continue only the E0-D P01 Slot 1 boundary: first verify the PR #148 association rotation and local protected rebinding of the new credential; if before the frozen window, stop before execution-sensitive provider work; if inside it, perform the fresh SurfSeven census, immediately preclaim authenticated AI Studio capacity gate for the amended association, frozen interlock check, and exactly one authorized run if all gates pass. Do not activate Slot 2 or later work without separate authority.`
