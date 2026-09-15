@@ -17,11 +17,11 @@ This packet exists so a fresh Administrator chat can recover the exact continuat
 
 ## Last reconciled repository snapshots
 
-- Project: `Rylascoo/Ensemble-Project main@cfa0ec95aa3ea588269135b3160ce008f523fd27`; E0-D ACTIVE; PR #148 integrated the P01 provider-association rotation and push-triggered exact-main Validation #859 passed; namespace unconsumed; provider traffic zero.
+- Project: `Rylascoo/Ensemble-Project main@0ea146c38a83f201001c1da7b9da31e943ebad1d`; E0-D ACTIVE; PR #149 integrated protected credential readiness and push-triggered exact-main Validation #863 passed; namespace unconsumed; provider traffic zero.
 - Ryladmin handoff integration base after compensated no-content incident: `main@93a68aec6f25bc2f14d7f24c4ee4e532efbe97b2`; fresh-resolve live `main` after this packet is integrated. Pre-incident `db805b4a7d75045fb98c550b72e39c7aa8f2dd44` is tree-identical to the compensated base.
 - Website publication: `Rylascoo/Ensemble-Website main@4bb91292171e0d503d3a4e058ee421436221a793`.
-- Active Design stream: `design/appui01-working-compositions-2026-09-14@51d06a7ac5cf243b41c16c60dc6f9e2cfd788288`; Phase 1 frozen PASS; eight bounded Phase-2 static studies PASS through Nonverbal Action / Refusal; next is the consolidated Phase-2 static closeout audit, then fresh Engineering reconciliation before any bounded Phase-3 entry/hold decision.
-- Website Issue #69 remains open. Active Design `CURRENT_STATE.md` now carries Engineering `main@e8b702a5b37d208d7caeeb6ffeb5a6beacf24f85`, which is stale relative to Project `main@cfa0ec95aa3ea588269135b3160ce008f523fd27`; this remains Design-owned reconciliation and must not be silently repaired by Administrator authority.
+- Active Design stream: `design/appui01-working-compositions-2026-09-14@cd56acbbb6e83bf736e3912dfd79294ee612937b`; Phase-2 static Stage/live-production coverage CLOSED PASS; bounded static Phase-3 visual-language entry OPEN; next is one bounded Phase-3 static visual-language integration study.
+- Website Issue #69 remains open. Active Design `CURRENT_STATE.md` carries Engineering `main@cfa0ec95aa3ea588269135b3160ce008f523fd27`, stale relative to Project `main@0ea146c38a83f201001c1da7b9da31e943ebad1d`; this remains Design-owned reconciliation and must not be silently repaired by Administrator authority.
 
 ## Exact P01 Slot 1 identity
 
@@ -51,7 +51,11 @@ Do not substitute the local raw fixture-file byte hash for the frozen canonical 
 
 Director amendment: `Rylascoo/Ensemble-Project/docs/evidence/E0D_P01_SLOT1_PROVIDER_ASSOCIATION_ROTATION_DIRECTOR_AMENDMENT_2026_09_15.md`. It supersedes only the prior P01 authenticated project/key association. The amended association is project `Ensemble Testing`, project ID `gen-lang-client-0793779417`, credential label `Gemini API Key`, Free tier. The Director-supplied AI Studio screenshot is provenance-hashed in Project evidence; neither the screenshot nor the secret is stored in Ryladmin.
 
-The fresh secret was not supplied to ChatGPT and is **not yet locally rebound** in this handoff state. The old protected `gemini-test-key.dpapi` / ready-marker pair must not be treated as readiness for the amended P01 association or injected into P01. Before launch, bind the new secret locally through the established CurrentUser-protected mechanism without printing, logging, hashing, exporting, committing or placing plaintext in command arguments. This protected rebinding/readiness check is non-provider preparation and may occur before the frozen window; it must not send a Gemini request or create a claim/evidence root.
+The fresh secret was not supplied to ChatGPT. Local protected readiness is now PASS: Project evidence `docs/evidence/E0D_P01_SLOT1_PROTECTED_CREDENTIAL_REBIND_READINESS_2026_09_15.md` records the separate `gemini-ensemble-testing-key.dpapi` / `.ready` pair as present with provider traffic zero, ambient `GEMINI_API_KEY` absent, Harness count zero and reserved root/claims absent. The old `gemini-test-key.dpapi` / ready-marker pair remains historical local state and may not be injected into P01.
+
+## Latest protected-credential readiness census
+
+At 2026-09-15T20:06:21.0846400Z, SurfSeven observed the new gemini-ensemble-testing-key.dpapi and .ready artifacts present, ready timestamp 2026-09-15T20:05:07.0051512Z, superseded old pair still present, ambient GEMINI_API_KEY absent, Harness count 0, and reserved P01 evidence root plus both deterministic claims absent. Temporary local installer files were removed afterward. This census sent no provider request.
 
 ## Last non-consuming SurfSeven census
 
@@ -98,4 +102,4 @@ Do not modify Website/Design authority to make it match this packet. The active 
 
 ## Minimal fresh-chat resume instruction
 
-`Resume the Ensemble / Kymaean Project Administrator from live Rylascoo/Ryladmin authority. Fresh-resolve live refs and read AGENTS.md, CURRENT_STATE.md, and docs/ADMINISTRATOR_FRESH_CHAT_HANDOFF_E0D_P01_SLOT1_2026_09_15.md. Recover exact Project authority rather than trusting the handoff snapshot. Continue only the E0-D P01 Slot 1 boundary: first verify the PR #148 association rotation and local protected rebinding of the new credential; if before the frozen window, stop before execution-sensitive provider work; if inside it, perform the fresh SurfSeven census, immediately preclaim authenticated AI Studio capacity gate for the amended association, frozen interlock check, and exactly one authorized run if all gates pass. Do not activate Slot 2 or later work without separate authority.`
+`Resume the Ensemble / Kymaean Project Administrator from live Rylascoo/Ryladmin authority. Fresh-resolve live refs and read AGENTS.md, CURRENT_STATE.md, and docs/ADMINISTRATOR_FRESH_CHAT_HANDOFF_E0D_P01_SLOT1_2026_09_15.md. Recover exact Project authority rather than trusting the handoff snapshot. Continue only the E0-D P01 Slot 1 boundary: verify PR #149 protected-readiness integration; if before the frozen window, stop before execution-sensitive provider work; if inside it, perform the fresh SurfSeven census, immediately preclaim authenticated AI Studio capacity gate for the amended association, frozen interlock check, confirm the new protected credential is selected, and execute exactly one authorized run if all gates pass. Do not activate Slot 2 or later work without separate authority.`
