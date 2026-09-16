@@ -56,9 +56,9 @@ Ryladmin commissioned runtime/source is unchanged by this continuity update. Exp
 
 ## Read-only Design snapshot
 
-At reconciliation, Website repository authority is `main@85ae862efc63463d909d7805128d05bc1cb14b83`. Its exact `CURRENT_STATE.md` records verified Website Placeholder V2.2 production; PR #85 promoted exact head `1d89c3e5f3c9ef1133bcde11b66e63592a88b0ac` as production `main@137636fe57c36235d2f8f45c87e96b5bd12e0768`, with all nine live public assets matching exact main Git blobs.
+At reconciliation, Website repository authority is `main@e0e6cf26441745547f0e09cc2c27ea6ba8059a2b`. Its exact `CURRENT_STATE.md` records Website Placeholder V2.2 production as still live/verified while a new explicit Director objective has reopened Website Sol only for a non-production Bellweather integration study.
 
-Parallel visual evidence through L-187 does not itself authorize app UI or website implementation changes. `PKT-STAGE-CORE-02` and `APP-SYN-01` remain untouched. Website authority directs verified production to remain stable and to reopen Website Sol only for a new explicit Director objective or objective production defect; Administrator does not edit Website/Design authority.
+L-188 and `docs/evidence/WEBSITE_V2_2_MASCOT_INTEGRATION_EXPLORATION_01.md` preserve the reopened study. Current synthesis is `PLACE -> PRESENCE -> PERSON -> WORLD`; the exact next Website action is deterministic non-production A1-A4 comparison against the current Stage/lockup. Production bytes remain stable, and the frozen boundary still prohibits Stage repaint, app UI, product disclosure, new logo/generated typography, Threshold-K redesign, or a universal Character-face rule. Administrator does not edit Website/Design authority.
 
 ## Resume instruction
 
