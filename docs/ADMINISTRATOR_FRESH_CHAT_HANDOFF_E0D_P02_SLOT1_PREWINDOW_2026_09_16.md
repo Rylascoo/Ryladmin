@@ -6,9 +6,9 @@ Status: continuity only. Owning Project/Website authority always wins after fres
 
 ## Owning Project boundary
 
-Fresh Project authority at reconciliation: `Rylascoo/Ensemble-Project main@fcd13ce3460c58ed17cfce012683a523ff381bc2`.
+Fresh Project authority at reconciliation: `Rylascoo/Ensemble-Project main@e007ed2838c892f2d7734dcf6ac87b6b00022684`.
 
-PR #157 integrated the exact P02 Slot-1 Director live-execution authorization plus preexecution activation package. Branch-push Validation #892, PR Validation #893, E0-E preparation #102, and push-triggered exact-main Validation #894 passed.
+PR #157 integrated the exact P02 Slot-1 Director live-execution authorization plus preexecution activation package. Branch-push Validation #892, PR Validation #893, E0-E preparation #102, and push-triggered exact-main Validation #894 passed. PR #158 then repaired stale post-integration continuity wording only; its branch-push Validation #895, PR Validation #896, E0-E preparation #103, and push-triggered exact-main Validation #897 passed.
 
 P01 Slots 1/2 remain permanently consumed/noncontributing with no retry. P01 remains experientially ineligible. Neither consumed root may be changed or retroactively sealed/repaired.
 
@@ -56,9 +56,9 @@ Ryladmin commissioned runtime/source is unchanged by this continuity update. Exp
 
 ## Read-only Design snapshot
 
-At reconciliation, Website publication `main@6f21480936293b3ef617d3bb880c7195ef20b40f`; active APPUI `design/appui01-working-compositions-2026-09-14@52443b0ad09817e8b3eb2b499a24fa88b1fa64dd`.
+At reconciliation, Website repository authority is `main@85ae862efc63463d909d7805128d05bc1cb14b83`. Its exact `CURRENT_STATE.md` records verified Website Placeholder V2.2 production; PR #85 promoted exact head `1d89c3e5f3c9ef1133bcde11b66e63592a88b0ac` as production `main@137636fe57c36235d2f8f45c87e96b5bd12e0768`, with all nine live public assets matching exact main Git blobs.
 
-APPUI-FICON-01 is CLOSED with F1 Native Quiet Carrier as the sole survivor. No additional Phase-3 static-safe gate is active; static APPUI is holding. Design's Engineering snapshot still names Project `ab6a140d...`, stale relative to `fcd13ce...`; Administrator does not edit Design authority to reconcile that read-only snapshot.
+Parallel visual evidence through L-187 does not itself authorize app UI or website implementation changes. `PKT-STAGE-CORE-02` and `APP-SYN-01` remain untouched. Website authority directs verified production to remain stable and to reopen Website Sol only for a new explicit Director objective or objective production defect; Administrator does not edit Website/Design authority.
 
 ## Resume instruction
 
