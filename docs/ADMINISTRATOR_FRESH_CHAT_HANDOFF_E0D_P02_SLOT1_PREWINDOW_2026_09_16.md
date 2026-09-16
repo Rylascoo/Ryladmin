@@ -56,7 +56,7 @@ Ryladmin commissioned runtime/source is unchanged by this continuity update. Exp
 
 ## Read-only Design snapshot
 
-At reconciliation, Website repository authority is `main@e0e6cf26441745547f0e09cc2c27ea6ba8059a2b`. Its exact `CURRENT_STATE.md` records Website Placeholder V2.2 production as still live/verified while a new explicit Director objective has reopened Website Sol only for a non-production Bellweather integration study.
+At reconciliation, Website repository authority is `main@cc312f3fd974f3c564aba0d210f64b75e195b0b`. Its exact `CURRENT_STATE.md` records Website Placeholder V2.2 production as still live/verified while a new explicit Director objective has reopened Website Sol only for a non-production Bellweather integration study.
 
 L-188 and `docs/evidence/WEBSITE_V2_2_MASCOT_INTEGRATION_EXPLORATION_01.md` preserve the reopened study. Current synthesis is `PLACE -> PRESENCE -> PERSON -> WORLD`; the exact next Website action is deterministic non-production A1-A4 comparison against the current Stage/lockup. Production bytes remain stable, and the frozen boundary still prohibits Stage repaint, app UI, product disclosure, new logo/generated typography, Threshold-K redesign, or a universal Character-face rule. Administrator does not edit Website/Design authority.
 
