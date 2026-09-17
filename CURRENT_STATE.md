@@ -307,7 +307,7 @@ The C7 connector-selection incident correction remains binding: edit Ryladmin on
 
 ## Historical supervised parallel production snapshot - 2026-09-12
 
-`docs/SUPERVISED_PARALLEL_PRODUCTION_BOARD.md` is the current Administrator dispatch board for deliberately using Codex and the commissioned C9 manual Claude review plane in parallel before C9A/C11 automation exists. It carries no owning-lane authority and must be fresh-resolved before every dispatch.
+`docs/SUPERVISED_PARALLEL_PRODUCTION_BOARD.md` is a historical supervised-production record, not a current dispatch surface. Its rows preserve pilot provenance only; current dispatch and sequencing must be recovered from this `CURRENT_STATE.md`, exact owning-lane authority, and the single Project execution queue.
 
 At this historical 2026-09-12 snapshot, Project `main` was `4f084f6820dbdcf8d3a55ab76fc3c5e59a4fb6d2`. Project records Repeat 1 as ready for one execution after exact-main Validation #748; Administrator has returned execution ownership to Engineering and will not continuously supervise that lane. Q-ADMIN-02 independently remains BLOCKED - C9A R2 falsified; C10 falsified. Website `main` is `28c6e428d6f9d6d492c60ad9890010ad57e9ed4a`; post-F4 re-entry found zero eligible isolated Stage refinement variables and the next Design boundary is the Director choice to authorize bounded APP-SYN-01 or hold for materially new authority.
 
