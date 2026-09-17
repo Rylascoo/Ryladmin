@@ -1,16 +1,16 @@
 # Ensemble Supervised Parallel Production Board
 
-Status: operational Administrator runtime + continuity board only. This file does not create Engineering, Design, product, provider, validation, experiment, backlog, or automation authority. Live owning repositories and their exact active refs always win; Project policy/security/orchestration law remains superior to Ryladmin runtime implementation.
+Status: HISTORICAL OPERATIONAL RECORD / NOT CURRENT DISPATCH AUTHORITY. This file preserves supervised-production pilot history only. It must not be used to select current work, infer current refs, or schedule a task. Fresh sessions use Ryladmin `CURRENT_STATE.md` plus the live owning repositories; `Rylascoo/Ensemble-Project/docs/PROJECT_EXECUTION_QUEUE.md` is the single cross-project backlog/sequencing register.
 
 Updated: 2026-09-14
 
 ## Purpose
 
-Use available Codex and Claude subscription capacity in parallel before C11 automation is commissioned, while preserving one-writer-per-lane discipline, exact-ref review, and fail-closed integration.
+This record preserves how supervised Codex and Claude capacity was coordinated before later continuity and runtime changes. It is retained for provenance, failure-mode learning, and audit history; it does not select present work.
 
-This board is a supervised dispatch surface, not an autonomous scheduler. Manual Claude reviews under the commissioned C9 review plane do not satisfy C9A, C10, or C11 and must not be represented as automated routing.
+Historically this file served as a supervised dispatch surface, never an autonomous scheduler. It is now retired from live dispatch. Historical manual Claude reviews under the commissioned C9 review plane did not satisfy C9A, C10, or C11 and must not be represented as automated routing.
 
-## Reconciled operating snapshot
+## Historical operating snapshot — captured 2026-09-14
 
 - Ryladmin continuity baseline: `main@8a11841fbf060fcfbe60ef84ad6a3083848d43ff`.
 - Project `main`: `36b9c4c2644d6d47c957e7910d0c609e260b5432`; E0-A/E0-B/E0-C are DONE. E0-D snapshot refresh + native revalidation are complete; live execution remains unauthorized, provider traffic remains zero, and all six frozen runs remain unclaimed/unconsumed. Q-ADMIN-03 predecessor and successor MA-01 realizations are consumed / failed closed; the successor proved exactly two bounded read-only native Scouts but did not earn admission. No retry is authorized, native subagents remain default-off, and MA-02+ remain blocked.
@@ -20,7 +20,7 @@ This board is a supervised dispatch surface, not an autonomous scheduler. Manual
 - Claude Code commissioned manual-review realization: `2.1.267`, dedicated `C:\Users\Wiryl\.claude-ensemble`, claude.ai first-party Pro subscription boundary.
 - Current SurfSeven Codex realization is `0.154.0-alpha.6.2` / SHA-256 `21AE7DF1...B94EA`, revalidated only for already-earned manual C4/C5 Administrator/Worker surfaces. C10 remains independently BLOCKED/FALSIFIED; no successor-runtime revalidation implies Hook fail-closed behavior.
 
-Re-resolve all relevant refs immediately before every dispatch. Any movement invalidates an exact-ref packet until rebuilt.
+The following snapshot and rows are historical evidence of the supervised-production period. Do not refresh them into another live board. For any new dispatch, recover live authority from Ryladmin `CURRENT_STATE.md`, the exact owning-lane current state, and the Project queue, then create only the bounded transport/evidence required by current authority.
 
 ## Dispatch law
 
@@ -29,11 +29,11 @@ Re-resolve all relevant refs immediately before every dispatch. Any movement inv
 3. Codex implementation workers operate only in isolated owning-lane worktrees and obey the owning repository's `AGENTS.md`, `CURRENT_STATE.md`, authority, validation, branch, and shared-Git laws.
 4. No manual review or worker output changes authority until the owning Sol/Administrator verifies and durably adopts it through normal repository process.
 5. Provider traffic/spend, ODR resolution, Design taste, validation promotion, automatic merge, and automatic unique-branch deletion remain outside this board unless separately authorized by their owning authority.
-6. Project `docs/PROJECT_EXECUTION_QUEUE.md` is sequencing only. Website `CURRENT_STATE.md` controls current Design execution when the Project queue is stale.
+6. Project `docs/PROJECT_EXECUTION_QUEUE.md` is the single cross-project backlog/sequencing register. This historical board never competes with it. If the queue conflicts with stronger owning-lane authority, reconcile the queue; do not route work from this board.
 
-## Parallel board
+## Historical parallel-board records
 
-| ID | Status | Primary executor | Mode | Exact current target | Deliverable / stop condition |
+| ID | Status | Primary executor | Mode | Historical target at record time | Deliverable / stop condition |
 | --- | --- | --- | --- | --- | --- |
 | PP-ENG-01 | E0-D SNAPSHOT REFRESH + NATIVE REVALIDATION COMPLETE / LIVE EXECUTION BLOCKED | Engineering Sol / Evidence | owning Engineering work; Administrator monitoring not required | Project `main@36b9c4c...`; exact native authority `0dacdbf6...` under `validation/e0d-snapshot-refresh-native-arm64`; provider traffic zero; snapshot valid through UTC 2026-09-18 | Await separate Director authorization for exact P01 Slot 1 activation/live execution. Immediately before any claim/provider traffic obtain the required fresh authenticated project/key/model/tier/quota/capacity observation. All six RunIds/evidence roots remain frozen, unclaimed and unconsumed; do not activate later slots early. |
 | PP-ENG-CLAUDE-01 | PARTIAL-COMPLETE / NO ADOPTION | Director-triggered Claude manual review | read-only independent review | exact Project `main@ba02d168...` plus candidate `d1073fe2...` | Turn completed normally but violated the required output contract: preliminary observations only, no final disposition or severity-ranked findings. Partial observations were independently verified; no Engineering change was adopted. Durable record: `docs/PP_ENG_CLAUDE_01A_PARTIAL_RESULT_2026_09_12.md`. Do not auto-retry the packet. |
@@ -51,9 +51,9 @@ Re-resolve all relevant refs immediately before every dispatch. Any movement inv
 | PP-ADMIN-SUPERVISED-CODEX | REVIEWER PATH SUSPENDED / WORKER UNCHANGED | Administrator Manager + isolated top-level Worker; Reviewer disabled pending repair | bounded manual Worker dispatch only; outer-manager reconciliation and STOP | runtime defect `docs/ADMINISTRATOR_REVIEWER_SUPERVISION_DEADLINE_DEFECT_2026_09_14.md` | Do not invoke the production Reviewer until a separately audited Ryladmin successor proves the newly observed deadline/process-topology case. Existing Worker commissioning is not reclassified. No self-trigger, auto-retry, auto-merge, provider authority, C10/C11 progress, or second backlog. |
 | PP-ADMIN-Q03 | MA-01 SUCCESSOR CONSUMED / FAILED CLOSED AFTER TWO NATIVE SCOUTS / NO RETRY | Administrator + accountable Sols | terminal MA-01 continuity boundary | Project terminal closeout `main@36b9c4c...`; predecessor + successor terminal evidence in Project; Ryladmin runtime remains `multi_agent=false`; Website live `main@4bb91292...` | Preserve both terminal results. The successor proved exactly two bounded depth-1 read-only Scouts, exact child fixture measurements, denied writes and zero survivors, but failed admission because root aggregation emitted one wrong required hash and automatic Cloudflare MCP startup attempted prohibited network initialization. Do not retry either consumed realization. Any later Scout admission requires a new explicit Director opening for a materially changed, separately sealed/validated realization; MA-02+ remain blocked and Reviewer remains suspended pending repair/revalidation. |
 
-## Recommended concurrency now
+## Historical concurrency note
 
-Owning Engineering and Design work proceed independently under their own authority; Administrator must not become a third writer or continuous experiment/design supervisor. The Administrator program remains centered on PP-C10-UPSTREAM and PP-C11-PREP-01. PP-ADMIN-MWR-02 preparation and PP-ADMIN-MWR-03 live timeout supervision are complete for their exact scopes, but the reusable production Reviewer path is currently suspended by the later deadline/process-topology defect and must not be invoked until a separately audited successor repairs and revalidates it. The existing top-level Worker remains unchanged and may be used only for already-authorized bounded work packages. Both MA-01 realizations are consumed / failed closed; the successor proved the native two-Scout mechanics but did not earn admission because of root-result integrity and automatic Cloudflare MCP initialization defects. No retry is authorized, native subagents remain default-off, and any future Scout admission requires a new explicit Director opening for a materially changed realization with startup plugin/MCP isolation and deterministic child-result aggregation proven before execution. Every production cycle returns to the outer Administrator and stops before any next dispatch; no autonomous loop authority exists. Candidate 01 remains the existing read-only `authority-recovery` Skill. C12 recovery and C13 sustainability follow only after C11 disposition. Hooks and commissioned Administrator Automations remain off; Issue #100/C9A R3 stays separate and blocked.
+This paragraph records the concurrency posture that applied when the board was last maintained. It is not a current priority list. Current Administrator priorities, earned gates, lane ownership, and blocked/active work must be recovered from Ryladmin `CURRENT_STATE.md` and live Project/Website authority. The durable lesson remains: the Administrator must not become a third writer or continuous Engineering/Design supervisor, and extra capacity does not justify inventing work.
 
 Do not add a second writer to either owning lane merely to consume quota. Extra capacity should go to independent review, falsification, test-gap analysis, or future-work preparation.
 
