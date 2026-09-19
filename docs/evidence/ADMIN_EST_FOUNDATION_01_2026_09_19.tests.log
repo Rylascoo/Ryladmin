@@ -25,9 +25,10 @@ test_one_writer_per_worktree (test_foundation.WriterTests.test_one_writer_per_wo
 test_protected_paths_even_if_grant_requests_them (test_foundation.WriterTests.test_protected_paths_even_if_grant_requests_them) ... ok
 test_quota_rejection_no_write (test_foundation.WriterTests.test_quota_rejection_no_write) ... ok
 test_unavailable_capabilities (test_foundation.WriterTests.test_unavailable_capabilities) ... ok
+test_matching_working_copy_hash_cannot_hide_crlf_drift (test_integrity.IntegrityTests.test_matching_working_copy_hash_cannot_hide_crlf_drift) ... ok
 test_missing_extra_or_changed_source_rejected (test_integrity.IntegrityTests.test_missing_extra_or_changed_source_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.318s
+Ran 28 tests in 0.498s
 
 OK

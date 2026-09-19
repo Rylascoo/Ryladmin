@@ -18,32 +18,32 @@
       "bytes": 14880
     },
     "runtime/foundation/schemas/capabilities.json": {
-      "sha256": "9bd4cd233ad33833f4028e3da1726e7ed5cf41548ef2bd1388be0c3b32ad2ee9",
-      "bytes": 1385
+      "sha256": "7c272f0b3e2071ab1f959ae459a01e600e806bd38c8f3e3a7ae205d6c065491f",
+      "bytes": 1323
     },
     "runtime/foundation/schemas/checkpoint.json": {
-      "sha256": "b8f16dbb7ab239965076dc1e42b6ed38de38c0f6921c4e647a940a226c14dd8d",
-      "bytes": 2818
+      "sha256": "b2de05ab5770967bc5baf79029d6c732cc8c625ed8b15332239c4ce68a9403e9",
+      "bytes": 2685
     },
     "runtime/foundation/schemas/grant.json": {
-      "sha256": "4a178b75b9880af8e494df419ada20b9f262c224d74a1f1b2ee1eea4e8657b57",
-      "bytes": 2817
+      "sha256": "5bc215468b11d3e81fcf4333ff51b31c0c56cb7f6c7459cf78ce710e9cfee5fe",
+      "bytes": 2679
     },
     "runtime/foundation/schemas/result.json": {
-      "sha256": "4cdcf3e6869d3d4b18e9ef12b02a2202f7b573bf33d4d656bc7639736bd2d0c1",
-      "bytes": 2782
+      "sha256": "10069802fb4c14793f10d889faa5881c7b39ccee06bab0b327cf8aae72ce2b69",
+      "bytes": 2651
     },
     "runtime/foundation/schemas/task.json": {
-      "sha256": "50345dba536cae2e83ae42890755d5a15dd24b72faca8cab517a03c5e6cfe346",
-      "bytes": 4265
+      "sha256": "5bf5c77a328ba1bf6034c830163dccbb10e33a8e78593889d8d947cfd45c463f",
+      "bytes": 4058
     },
     "runtime/foundation/schemas/usage-event.json": {
-      "sha256": "8a797233df6481bdeb49b9f79f2e48f048971b115900a8153a35673991d71b10",
-      "bytes": 916
+      "sha256": "aaa1f80f8d9869bda72935aa62340045640d5f5ef4b90d2b0a1fecfe9a28f73c",
+      "bytes": 869
     },
     "runtime/foundation/schemas/usage.json": {
-      "sha256": "7e1b8faad15534543f24791cb6124bcd327b3c821dba4a25c01b51b53e271f04",
-      "bytes": 1475
+      "sha256": "3ef045f4189a926b9d7ec6bb7f6e10dd2c5be155edca98894de86daef5b61663",
+      "bytes": 1409
     },
     "runtime/foundation/writer.py": {
       "sha256": "308f1c1d982cf278fdb63970ff20992134b1d97cb9a60b69878e6bc25f8f599b",
@@ -54,12 +54,12 @@
       "bytes": 16586
     },
     "tests/test_integrity.py": {
-      "sha256": "c9b40601bf2d26dc9db2c589618859d0b7cb3b5962c3d4401ed79ae97c338400",
-      "bytes": 916
+      "sha256": "cb792cad5bfaedf59b58bd4ea63047be9e8d6fb857962b10fb27c13e9cd12e16",
+      "bytes": 1349
     },
     "tools/verify_foundation.py": {
-      "sha256": "b4e723fc7c2651638185aff42413ba6e2ef196f11bdae8c391ac6e76a4ed8a74",
-      "bytes": 2804
+      "sha256": "79383c05af87bb03ba3378bc2e7c6771ba81a1261f55e6c9255ebf6ad3de428b",
+      "bytes": 2942
     }
   }
 }

@@ -11,6 +11,14 @@ from policy import Rejected
 
 
 class IntegrityTests(unittest.TestCase):
+    def test_matching_working_copy_hash_cannot_hide_crlf_drift(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            content=b'candidate\r\n'
+            (root/'a').write_bytes(content)
+            manifest={'a':{'sha256':hashlib.sha256(content).hexdigest(),'bytes':len(content)}}
+            with self.assertRaises(Rejected): verify_manifest(root,manifest,['a'],lf_only=True)
+
     def test_missing_extra_or_changed_source_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)

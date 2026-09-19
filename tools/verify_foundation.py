@@ -11,10 +11,11 @@ sys.path.insert(0, str(ROOT / 'runtime/foundation'))
 from policy import contract, load_json, require
 
 
-def verify_manifest(root, manifest, actual):
+def verify_manifest(root, manifest, actual, *, lf_only=False):
     require(set(actual) == set(manifest), 'manifest file set mismatch')
     for relative, expected in manifest.items():
         content = (root / relative).read_bytes()
+        require(not lf_only or b'\r' not in content, 'candidate text must use canonical LF: ' + relative)
         require(hashlib.sha256(content).hexdigest().lower() == expected['sha256'].lower(), 'hash drift: ' + relative)
         require(len(content) == expected['bytes'], 'length drift: ' + relative)
 
@@ -32,7 +33,7 @@ def verify(root=ROOT):
     actual = [p.relative_to(current).as_posix() for p in current.rglob('*') if p.is_file()]
     verify_manifest(current, manifest['files'], actual)
     foundation = load_json(root / 'runtime/foundation/source-manifest.json')
-    verify_manifest(root, foundation['files'], candidate_paths(root))
+    verify_manifest(root, foundation['files'], candidate_paths(root), lf_only=True)
     forbidden = {'auth.json','sessions','scratch','browser','plugins','.sandbox','.sandbox-secrets','installation_id'}
     for surface in (current, root/'runtime/foundation'):
         for path in surface.rglob('*'):
