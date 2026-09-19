@@ -1,0 +1,26 @@
+name: Administrator foundation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  foundation:
+    name: Foundation (${{ matrix.os }})
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Canonical commissioned source integrity
+        shell: pwsh
+        run: ./runtime/verify-source.ps1
+      - name: Candidate integrity, configuration and private-state exclusion
+        run: python -B tools/verify_foundation.py
+      - name: Deterministic policy and negative fixtures
+        run: python -B -m unittest discover -s tests -v

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:result:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.result.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "repository": {
+      "type": "string",
+      "const": "Rylascoo/Ryladmin"
+    },
+    "head": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "authority_ref": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "status": {
+      "type": "string",
+      "const": "RETURNED"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "root_exit_code": {
+      "type": "integer",
+      "minimum": -2147483648,
+      "maximum": 2147483647
+    },
+    "owned_survivors": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000000000
+    },
+    "changed_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": ".*\\S.*"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "[0-9a-f]{64}"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "token_usage": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000000000
+    },
+    "token_enforcement": {
+      "type": "string",
+      "const": "UNAVAILABLE"
+    }
+  },
+  "required": [
+    "schema",
+    "job_id",
+    "repository",
+    "head",
+    "authority_ref",
+    "input_sha256",
+    "owner",
+    "status",
+    "summary",
+    "root_exit_code",
+    "owned_survivors",
+    "changed_paths",
+    "tests",
+    "evidence",
+    "token_usage",
+    "token_enforcement"
+  ],
+  "additionalProperties": false
+}

@@ -1,2 +1,5 @@
 # Canonical Administrator runtime source is byte-hashed; preserve LF across Windows/Linux checkouts.
 runtime/** text eol=lf
+tests/** text eol=lf
+tools/** text eol=lf
+.github/** text eol=lf

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:usage:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.usage.v1"
+    },
+    "observed_at": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000000000
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "windows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": ".*\\S.*"
+          },
+          "duration_minutes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000000000
+          },
+          "remaining": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "reset_at": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10000000000
+          }
+        },
+        "required": [
+          "id",
+          "duration_minutes",
+          "remaining",
+          "reset_at"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema",
+    "observed_at",
+    "source",
+    "windows"
+  ],
+  "additionalProperties": false
+}

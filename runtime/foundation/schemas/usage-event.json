@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:usage-event:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.usage-event.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000000000
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "job",
+        "aggregate"
+      ]
+    },
+    "tokens": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000000000
+    }
+  },
+  "required": [
+    "schema",
+    "job_id",
+    "event_id",
+    "sequence",
+    "scope",
+    "tokens"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:checkpoint:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.checkpoint.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "head": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "lease": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "LIGHT",
+        "CHECKPOINT_ONLY",
+        "WAITING_FOR_RESET",
+        "USAGE_UNKNOWN"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "next_operation": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "paused": {
+      "type": "boolean"
+    },
+    "required_windows": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "reservations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "window": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": ".*\\S.*"
+          },
+          "percentage_points": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "required": [
+          "window",
+          "percentage_points"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "partial_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "completed_tests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "automatic_resume": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "job_id",
+    "head",
+    "owner",
+    "lease",
+    "state",
+    "reason",
+    "next_operation",
+    "paused",
+    "required_windows",
+    "reservations",
+    "partial_artifacts",
+    "completed_tests",
+    "automatic_resume"
+  ],
+  "additionalProperties": false
+}

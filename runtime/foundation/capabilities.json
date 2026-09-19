@@ -1,0 +1,15 @@
+{
+  "schema": "ryladmin.capabilities.v1",
+  "project_ref": "9971acd06cabc7e5965b6f4c1a5d65168958ca4c",
+  "live_dispatch": false,
+  "capabilities": [
+    {"name": "foundation-policy", "status": "EXPERIMENTAL", "reason": "Deterministic candidate; no installed or process-containment admission"},
+    {"name": "ryladmin-repository-writer", "status": "NOT_ADMITTED", "reason": "Bounded writer tests are not OS isolation or installed admission"},
+    {"name": "native-scout", "status": "NOT_ADMITTED", "reason": "Prior MA-01 attempts consumed; new sealed successor required"},
+    {"name": "reviewer", "status": "SUSPENDED", "reason": "Reviewer supervision deadline defect 2026-09-14"},
+    {"name": "claude-orchestration", "status": "NOT_ADMITTED", "reason": "C9A uncommissioned; prior attempts remain terminal"},
+    {"name": "hooks", "status": "NOT_ADMITTED", "reason": "C10 falsified; upstream eligibility required"},
+    {"name": "scheduler", "status": "NOT_ADMITTED", "reason": "C11 unearned; no unattended quota resumption"},
+    {"name": "provider", "status": "NOT_ADMITTED", "reason": "No provider execution granted by Q-ADMIN-04"}
+  ]
+}
