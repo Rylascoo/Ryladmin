@@ -20,7 +20,7 @@ Ryladmin canonically owns the versioned executable realization of already-approv
 
 ## Codex establishment entry
 
-For Director-approved Q-ADMIN-04, recover its live Project authorization before using `docs/CODEX_ADMINISTRATOR_ESTABLISHMENT_PLAN_2026_09_19.md`. Standing permission covers the bounded establishment program, not immediate native-agent enablement or a restart of paused Product/Design chats. The plan identifies the first implementation package and tested admission conditions. Load historical state only for a specific unresolved provenance question.
+For Director-approved Q-ADMIN-04, recover its live Project authorization before using `docs/CODEX_ADMINISTRATOR_ESTABLISHMENT_PLAN_2026_09_19.md`. Standing permission covers the bounded establishment program, not immediate native-agent enablement or a restart of paused Product/Design chats. The plan identifies the first implementation package and tested admission conditions. Read the owning quota/write addendum before budget-aware dispatch or repository-writer setup; scoped writes are authorized, installed capability admission is still required. Load historical state only for a specific unresolved provenance question.
 
 ## Operating discipline
 
