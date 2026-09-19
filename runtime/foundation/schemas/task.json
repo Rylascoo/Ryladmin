@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:task:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.task.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "repository": {
+      "type": "string",
+      "const": "Rylascoo/Ryladmin"
+    },
+    "head": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "authority_ref": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "authority_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "tool_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "worktree": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "lease": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "expires_at": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000000000
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "repository-writer",
+        "scout",
+        "reviewer"
+      ]
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "required_tests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "return_target": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "validation_claim": {
+      "type": "string",
+      "const": "DETERMINISTIC_ONLY"
+    },
+    "depth": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "deadline_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 600
+    },
+    "token_budget": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "cancellation_owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "write_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "network": {
+      "type": "boolean"
+    },
+    "mcp": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema",
+    "job_id",
+    "repository",
+    "head",
+    "authority_ref",
+    "authority_sha256",
+    "input_sha256",
+    "tool_sha256",
+    "worktree",
+    "owner",
+    "lease",
+    "expires_at",
+    "capability",
+    "role",
+    "objective",
+    "required_tests",
+    "return_target",
+    "validation_claim",
+    "depth",
+    "deadline_seconds",
+    "token_budget",
+    "cancellation_owner",
+    "tools",
+    "write_paths",
+    "args",
+    "network",
+    "mcp",
+    "plugins"
+  ],
+  "additionalProperties": false
+}

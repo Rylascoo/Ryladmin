@@ -1,0 +1,34 @@
+{"live_dispatch": false, "private_state_exclusion": "PASS", "python_parse": "PASS", "source_integrity": "PASS", "toml_parse": "PASS"}
+test_disappearing_window (test_foundation.QuotaTests.test_disappearing_window) ... ok
+test_elapsed_reset_is_not_replenishment (test_foundation.QuotaTests.test_elapsed_reset_is_not_replenishment) ... ok
+test_hysteresis_all_windows (test_foundation.QuotaTests.test_hysteresis_all_windows) ... ok
+test_light_one_small_task_only (test_foundation.QuotaTests.test_light_one_small_task_only) ... ok
+test_pause_overrides_replenishment (test_foundation.QuotaTests.test_pause_overrides_replenishment) ... ok
+test_reservations_and_uncertainty (test_foundation.QuotaTests.test_reservations_and_uncertainty) ... ok
+test_supported_normalization_deduplicates_legacy (test_foundation.QuotaTests.test_supported_normalization_deduplicates_legacy) ... ok
+test_thresholds (test_foundation.QuotaTests.test_thresholds) ... ok
+test_unknown_inputs (test_foundation.QuotaTests.test_unknown_inputs) ... ok
+test_usage_event_dedup (test_foundation.QuotaTests.test_usage_event_dedup) ... ok
+test_checkpoint_restart_and_interruption (test_foundation.StateResultTests.test_checkpoint_restart_and_interruption) ... ok
+test_entry_duplicate_options_rejected (test_foundation.StateResultTests.test_entry_duplicate_options_rejected) ... ok
+test_entry_rejects_unrestricted_arguments_without_launch (test_foundation.StateResultTests.test_entry_rejects_unrestricted_arguments_without_launch) ... ok
+test_result_validation_no_self_promotion (test_foundation.StateResultTests.test_result_validation_no_self_promotion) ... ok
+test_schema_rejects_unknown_fields (test_foundation.StateResultTests.test_schema_rejects_unknown_fields) ... ok
+test_allowed_isolated_atomic_write (test_foundation.WriterTests.test_allowed_isolated_atomic_write) ... ok
+test_authority_changed_before_atomic_step (test_foundation.WriterTests.test_authority_changed_before_atomic_step) ... ok
+test_changed_file_and_interrupted_write (test_foundation.WriterTests.test_changed_file_and_interrupted_write) ... ok
+test_control_state_not_candidate_owned (test_foundation.WriterTests.test_control_state_not_candidate_owned) ... ok
+test_hardlink_rejected (test_foundation.WriterTests.test_hardlink_rejected) ... ok
+test_negative_packets_do_not_reach_replace (test_foundation.WriterTests.test_negative_packets_do_not_reach_replace) ... ok
+test_observed_rejections_no_dispatch (test_foundation.WriterTests.test_observed_rejections_no_dispatch) ... ok
+test_one_writer_per_worktree (test_foundation.WriterTests.test_one_writer_per_worktree) ... ok
+test_protected_paths_even_if_grant_requests_them (test_foundation.WriterTests.test_protected_paths_even_if_grant_requests_them) ... ok
+test_quota_rejection_no_write (test_foundation.WriterTests.test_quota_rejection_no_write) ... ok
+test_unavailable_capabilities (test_foundation.WriterTests.test_unavailable_capabilities) ... ok
+test_matching_working_copy_hash_cannot_hide_crlf_drift (test_integrity.IntegrityTests.test_matching_working_copy_hash_cannot_hide_crlf_drift) ... ok
+test_missing_extra_or_changed_source_rejected (test_integrity.IntegrityTests.test_missing_extra_or_changed_source_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.498s
+
+OK

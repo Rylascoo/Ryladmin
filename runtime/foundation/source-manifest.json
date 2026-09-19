@@ -1,0 +1,65 @@
+{
+  "schema": "ryladmin.foundation-source.v1",
+  "files": {
+    ".github/workflows/foundation.yml": {
+      "sha256": "f744c7b84f79812261d701c67ab4e576d7fab8e23cf342e4e192af67f9a6a60f",
+      "bytes": 760
+    },
+    "runtime/foundation/capabilities.json": {
+      "sha256": "118acb58aa5439a0bdf36869d1c47c5473ed3475afa759465aa4c8bcbe3d6134",
+      "bytes": 1142
+    },
+    "runtime/foundation/entry.py": {
+      "sha256": "180ad8108de5b2c4c64f13f54e5bd66352ff4a81990df6f41066fb3efe785ac9",
+      "bytes": 2573
+    },
+    "runtime/foundation/policy.py": {
+      "sha256": "90bdcb11a20c4c549bec4d5299257c3df8c190e908ce2c02c8a5ca030ada3bc3",
+      "bytes": 14880
+    },
+    "runtime/foundation/schemas/capabilities.json": {
+      "sha256": "7c272f0b3e2071ab1f959ae459a01e600e806bd38c8f3e3a7ae205d6c065491f",
+      "bytes": 1323
+    },
+    "runtime/foundation/schemas/checkpoint.json": {
+      "sha256": "b2de05ab5770967bc5baf79029d6c732cc8c625ed8b15332239c4ce68a9403e9",
+      "bytes": 2685
+    },
+    "runtime/foundation/schemas/grant.json": {
+      "sha256": "5bc215468b11d3e81fcf4333ff51b31c0c56cb7f6c7459cf78ce710e9cfee5fe",
+      "bytes": 2679
+    },
+    "runtime/foundation/schemas/result.json": {
+      "sha256": "10069802fb4c14793f10d889faa5881c7b39ccee06bab0b327cf8aae72ce2b69",
+      "bytes": 2651
+    },
+    "runtime/foundation/schemas/task.json": {
+      "sha256": "5bf5c77a328ba1bf6034c830163dccbb10e33a8e78593889d8d947cfd45c463f",
+      "bytes": 4058
+    },
+    "runtime/foundation/schemas/usage-event.json": {
+      "sha256": "aaa1f80f8d9869bda72935aa62340045640d5f5ef4b90d2b0a1fecfe9a28f73c",
+      "bytes": 869
+    },
+    "runtime/foundation/schemas/usage.json": {
+      "sha256": "3ef045f4189a926b9d7ec6bb7f6e10dd2c5be155edca98894de86daef5b61663",
+      "bytes": 1409
+    },
+    "runtime/foundation/writer.py": {
+      "sha256": "308f1c1d982cf278fdb63970ff20992134b1d97cb9a60b69878e6bc25f8f599b",
+      "bytes": 2692
+    },
+    "tests/test_foundation.py": {
+      "sha256": "ae385e019b62010f32fb2b7cab06bd84c958fb1546b51ff4f2d522658809de1e",
+      "bytes": 16586
+    },
+    "tests/test_integrity.py": {
+      "sha256": "cb792cad5bfaedf59b58bd4ea63047be9e8d6fb857962b10fb27c13e9cd12e16",
+      "bytes": 1349
+    },
+    "tools/verify_foundation.py": {
+      "sha256": "79383c05af87bb03ba3378bc2e7c6771ba81a1261f55e6c9255ebf6ad3de428b",
+      "bytes": 2942
+    }
+  }
+}

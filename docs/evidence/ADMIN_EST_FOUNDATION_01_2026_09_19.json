@@ -1,0 +1,41 @@
+{
+  "schema": "ryladmin.foundation-evidence.v1",
+  "package": "ADMIN-EST-FOUNDATION-01",
+  "status": "PARTIAL_NOT_COMMISSIONED",
+  "project_ref": "9971acd06cabc7e5965b6f4c1a5d65168958ca4c",
+  "ryladmin_base": "005d674f5b303f4f7bec04b5436856057a568d5a",
+  "candidate_manifest_sha256": "57a8badac1158e3c6bb4c5bd86d85c900ca151e5d0db0b9afa2d7f47949421e4",
+  "deterministic_tests": {
+    "exit_code": 0,
+    "tests": 28,
+    "location": "isolated Ryladmin worktree; Windows ARM64 Python 3.12.10; disposable fixtures"
+  },
+  "logs": [
+    {
+      "path": "docs/evidence/ADMIN_EST_FOUNDATION_01_2026_09_19.tests.log",
+      "sha256": "df675c7d10eb2780f3678180788ccf0b66b79913356d9b8081f3958430884278"
+    }
+  ],
+  "installed_source_files": 13,
+  "installed_source_byte_identity": "PASS",
+  "pinned_codex_executable": "MISSING",
+  "branch_protection": "UNVERIFIED_CONNECTOR_403",
+  "live_metering": "NOT_TESTED",
+  "os_containment": "NOT_TESTED",
+  "live_dispatch": false,
+  "independent_review": "NOT_PERFORMED",
+  "token_enforcement": "UNAVAILABLE",
+  "worktree_census": {
+    "total": 71,
+    "dirty": 9,
+    "unresolved": 0,
+    "all_existing_worktrees": "PRESERVED_NO_OWNERSHIP_TRANSFER",
+    "raw_census": "machine-local temporary evidence; not repository source"
+  },
+  "paused_app_work": "HELD_UNCHANGED",
+  "next_owner": "Administrator",
+  "next_operation": "Continue FOUNDATION-01: recover/requalify exact executable, trusted authority/metering and OS writer boundary; obtain accountable review before merge.",
+  "source_integrity": "PASS",
+  "configuration_parse": "PASS",
+  "corrected_ci_failure": "5e3fbfc push run 35455963813: generated schema working copies had CRLF before Git normalization; regenerated canonical LF hashes and added negative fixture."
+}

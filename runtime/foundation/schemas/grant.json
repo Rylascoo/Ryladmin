@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ryladmin:grant:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "ryladmin.grant.v1"
+    },
+    "repository": {
+      "type": "string",
+      "const": "Rylascoo/Ryladmin"
+    },
+    "head": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "authority_ref": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "authority_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "tool_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "worktree": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "lease": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "expires_at": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000000000
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ADMITTED",
+        "SUSPENDED",
+        "EXPERIMENTAL",
+        "NOT_ADMITTED"
+      ]
+    },
+    "acceptance_ref": {
+      "type": "string",
+      "pattern": "[0-9a-f]{40}"
+    },
+    "max_depth": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "max_jobs": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2
+    },
+    "max_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 600
+    },
+    "max_tokens": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "write_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": ".*\\S.*"
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema",
+    "repository",
+    "head",
+    "authority_ref",
+    "authority_sha256",
+    "input_sha256",
+    "tool_sha256",
+    "worktree",
+    "owner",
+    "lease",
+    "expires_at",
+    "capability",
+    "status",
+    "acceptance_ref",
+    "max_depth",
+    "max_jobs",
+    "max_seconds",
+    "max_tokens",
+    "tools",
+    "write_paths"
+  ],
+  "additionalProperties": false
+}
