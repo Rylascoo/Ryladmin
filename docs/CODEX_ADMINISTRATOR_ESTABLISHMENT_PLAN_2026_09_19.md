@@ -28,7 +28,8 @@ Implement together:
 - explicit capability states ADMITTED / SUSPENDED / EXPERIMENTAL / NOT_ADMITTED, grounded in exact Project authority and validated implementation;
 - dispatch/result identity, exact-ref/path/tool allowlists, hash validation, bounded execution/usage settings and cancellation ownership;
 - argument validation rather than unrestricted permission overrides;
-- the smallest Ryladmin-aware launcher needed to use those checks;
+- the smallest Ryladmin-aware launcher and isolated repository-writer context needed to use those checks;
+- deterministic quota state/reserve decisions and supported-interface metering preparation under the owning quota/write addendum;
 - a compact resumable checkpoint and one evidence summary.
 
 Tests must reject stale/wrong HEAD, unknown capability, changed authority/input, protected or foreign write surface, excess depth/concurrency, conflicting arguments, unexpected network/MCP/plugin startup and invalid/empty result fields. Assert both rejection and absence of underlying dispatch. Keep unsupported token enforcement clearly distinct from observed usage accounting.
@@ -52,6 +53,18 @@ Unify reconstruction with canonical runtime source plus non-secret machine bindi
 One Administrator is the Director-facing coordinator. Engineering Sol remains accountable for engineering acceptance. Task profiles can specialize in Application, Persistence, Windows/runtime, reconnaissance and independent review. Instantiate only needed roles; initial ceilings are one executor by default, at most two delegated jobs in total, depth one, and no recursive spawning. Two writers need independently proven isolation and nonoverlapping leases.
 
 Use targeted exact-ref packets, compact evidence summaries, deterministic mechanical checks and artifact references. Read all mandatory authority; reuse an unchanged exact baseline and retrieve deltas rather than replaying the chat/history. Escalate model/effort for real ambiguity or consequential risk, not routine Git/CI reporting. Never hard-code volatile model names into Product architecture.
+
+## Quota-aware operation and formalization writes
+
+Required owning policy: `Rylascoo/Ensemble-Project/docs/PROJECT_ADMINISTRATOR_QUOTA_AND_WRITE_POLICY_2026_09_19.md`. Read it through EOF at the live owning ref. It defines the Director-requested approximately-10%-remaining LIGHT mode, closeout reserve, stricter exhausted/unknown states, replenishment check, and scoped Administrator writes. This section is implementation routing, not a second policy source.
+
+ADMIN-EST-FOUNDATION-01 must implement a deterministic state selector with recorded per-window observations, in-flight reservations, task identity and checkpoint state. Keep task token counts separate from account allowance and context capacity. Verify official metering/model-discovery support against the admitted executable; do not infer live access from current web documentation. Unknown or stale required usage must stop model dispatch, not silently select NORMAL.
+
+At LIGHT entry, checkpoint and reduce to at most one small qualified model task; prefer bounded deterministic work. Preserve the policy's closeout reserve, validate replenishment across all applicable windows and recheck authority/ownership before NORMAL. Test boundary values, missing/stale data, multiple windows, external consumption, event deduplication, interrupted writes, restart and user pause. A quota reset never reactivates a paused app lease or permits a weaker correctness standard.
+
+Implement positive/negative tests for the bounded Ryladmin repository-writer context: it can save approved changes in its own worktree but cannot alter the active installation, foreign worktrees or its own admission record. Project decision-record changes use separate scope and accountable Engineering acceptance; shared Git and PR mechanics remain serialized. Do not give read-only Scouts/Reviewers write authority or change installed permissions in this preparation.
+
+Automatic reset-time waiting/resumption requires the owning policy's still-unearned supervisor/C10/C11 admission. Until then, leave a resumable checkpoint; no model polling, automatic spending, banked-reset redemption or authentication fallback. The current package formalizes requirements only; no metering service, new agent or scheduler is running.
 
 ## Paused-work and app-delivery handoff
 
