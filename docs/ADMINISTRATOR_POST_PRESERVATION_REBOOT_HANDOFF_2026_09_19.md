@@ -1,4 +1,4 @@
-﻿# Administrator Post-Preservation Reboot Handoff — 2026-09-19
+# Administrator Post-Preservation Reboot Handoff — 2026-09-19
 
 Status: DURABLE CONTINUITY / LOCAL MIGRATION NOT YET EXECUTED
 
