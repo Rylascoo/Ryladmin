@@ -269,12 +269,12 @@ class StateResultTests(unittest.TestCase):
 
     def test_entry_rejects_unrestricted_arguments_without_launch(self):
         entry = Path(__file__).resolve().parents[1]/'runtime/foundation/entry.py'
-        result = subprocess.run([sys.executable,str(entry),'--yolo'],capture_output=True,timeout=10)
+        result = subprocess.run([sys.executable,'-B',str(entry),'--yolo'],capture_output=True,timeout=10)
         self.assertEqual(2,result.returncode)
 
     def test_entry_duplicate_options_rejected(self):
         entry = Path(__file__).resolve().parents[1]/'runtime/foundation/entry.py'
-        result = subprocess.run([sys.executable,str(entry),'--check','--expected-head','a'*40,
+        result = subprocess.run([sys.executable,'-B',str(entry),'--check','--expected-head','a'*40,
                                  '--expected-head','b'*40],capture_output=True,timeout=10)
         self.assertEqual(2,result.returncode)
         self.assertIn(b'duplicate/conflicting',result.stderr)

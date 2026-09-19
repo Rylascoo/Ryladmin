@@ -4,7 +4,7 @@
   "status": "PARTIAL_NOT_COMMISSIONED",
   "project_ref": "9971acd06cabc7e5965b6f4c1a5d65168958ca4c",
   "ryladmin_base": "005d674f5b303f4f7bec04b5436856057a568d5a",
-  "candidate_manifest_sha256": "0cd5955de691fed4bb26890c40c28db300d81a61c6e11cac6f3ac52aa03b1397",
+  "candidate_manifest_sha256": "63dacba5102600afd20f88e5381c55e2aa82dc7646c22cf159172b3312e0a204",
   "deterministic_tests": {
     "exit_code": 0,
     "tests": 27,
@@ -13,7 +13,7 @@
   "logs": [
     {
       "path": "docs/evidence/ADMIN_EST_FOUNDATION_01_2026_09_19.tests.log",
-      "sha256": "78bbeb78db3a9cd53960dbd02853d8aab7a9a79758fb22188232c2cae8ff1e50"
+      "sha256": "4383210481e30a9c174b61ec4323a01c8d475e8b7aad274a04455405fe967d0c"
     }
   ],
   "installed_source_files": 13,

@@ -50,8 +50,8 @@
       "bytes": 2692
     },
     "tests/test_foundation.py": {
-      "sha256": "42cc82b3873d8fc49f84c5183165bf2012be61344b977c81e4740be1ccd9811c",
-      "bytes": 16576
+      "sha256": "ae385e019b62010f32fb2b7cab06bd84c958fb1546b51ff4f2d522658809de1e",
+      "bytes": 16586
     },
     "tests/test_integrity.py": {
       "sha256": "c9b40601bf2d26dc9db2c589618859d0b7cb3b5962c3d4401ed79ae97c338400",

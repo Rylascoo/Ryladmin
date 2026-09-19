@@ -3,3 +3,4 @@ runtime/** text eol=lf
 tests/** text eol=lf
 tools/** text eol=lf
 .github/** text eol=lf
+docs/evidence/*.log binary

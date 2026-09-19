@@ -28,6 +28,6 @@ test_unavailable_capabilities (test_foundation.WriterTests.test_unavailable_capa
 test_missing_extra_or_changed_source_rejected (test_integrity.IntegrityTests.test_missing_extra_or_changed_source_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.351s
+Ran 27 tests in 0.318s
 
 OK
